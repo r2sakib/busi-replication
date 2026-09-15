@@ -150,6 +150,8 @@ def main():
     ap.add_argument("--src", required=True, type=Path)
     ap.add_argument("--out", required=True, type=Path)
     ap.add_argument("--seed", type=int, default=42)
+    ap.add_argument("--allow-split-mismatch", action="store_true",
+                    help="continue even if the test split is not 66/31/20")
     ap.add_argument("--dedup-threshold", type=int, default=6,
                     help="max phash hamming distance to call two images duplicates")
     args = ap.parse_args()
@@ -196,7 +198,15 @@ def main():
         seen.append(r)
     print(f"near-duplicate pairs at hamming<={args.dedup_threshold}: {len(dup_rows)}")
 
-    # ---- stratified 70/15/15, seed 42
+    # ---- stratified two-stage split, seed 42
+    # Reproduces sklearn.train_test_split semantics exactly:
+    #   stage 1  train_test_split(test_size=0.30)  -> n_temp  = ceil(0.30 * n)
+    #   stage 2  train_test_split(test_size=0.50)  -> n_val   = ceil(0.50 * n_temp)
+    #                                                 n_test  = n_temp - n_val
+    # sklearn uses ceil for the test portion, NOT round. Getting this wrong costs
+    # you one benign image and makes the test set 116 instead of the paper's 117,
+    # which means you can never land on their 103/117 = 0.8803 exactly.
+    import math
     by_cls = defaultdict(list)
     for r in recs:
         by_cls[r["cls"]].append(r)
@@ -205,9 +215,16 @@ def main():
         rs = sorted(rs, key=lambda x: x["stem"])
         rng.shuffle(rs)
         n = len(rs)
-        n_tr, n_va = int(round(0.70 * n)), int(round(0.15 * n))
+        n_temp = math.ceil(0.30 * n)
+        n_train = n - n_temp
+        n_val = math.ceil(0.50 * n_temp)
         for i, r in enumerate(rs):
-            split[r["stem"]] = "train" if i < n_tr else ("val" if i < n_tr + n_va else "test")
+            if i < n_train:
+                split[r["stem"]] = "train"
+            elif i < n_train + n_val:
+                split[r["stem"]] = "val"
+            else:
+                split[r["stem"]] = "test"
 
     counts = defaultdict(lambda: defaultdict(int))
     for r in recs:
@@ -215,6 +232,21 @@ def main():
     for s in ("train", "val", "test"):
         print(f"  {s:5s} " + "  ".join(f"{c}={counts[s][c]}" for c in CLASSES)
               + f"  total={sum(counts[s].values())}")
+
+    # ---- hard gate: the paper's Fig. 6 confusion matrix sums to 66/31/20 = 117.
+    # If your test split differs, no accuracy you compute is comparable to theirs.
+    expected = {"benign": 66, "malignant": 31, "normal": 20}
+    got = {c: counts["test"][c] for c in CLASSES}
+    if got != expected:
+        print(f"\n  !! TEST SPLIT MISMATCH\n     expected {expected} (117 total)"
+              f"\n     got      {got} ({sum(got.values())} total)")
+        if not args.allow_split_mismatch:
+            raise SystemExit(
+                "Refusing to continue. Either the source dataset is not standard "
+                "BUSI (780 images: 437/210/133), or the split logic drifted.\n"
+                "Pass --allow-split-mismatch to override deliberately.")
+    else:
+        print("  test split matches the paper exactly (66/31/20 = 117)")
 
     # ---- leakage check: duplicates straddling the train/test boundary
     leak = [d for d in dup_rows
