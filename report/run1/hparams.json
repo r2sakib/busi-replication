@@ -1,0 +1,119 @@
+{
+ "common": {
+  "epochs": 200,
+  "patience": 30,
+  "warmup_epochs": 3,
+  "cos_lr": false,
+  "cache": "ram",
+  "workers": 2,
+  "deterministic": true,
+  "fliplr": 0.5,
+  "flipud": 0.5,
+  "mosaic": 1.0,
+  "mixup": 0.1,
+  "hsv_h": 0.015,
+  "hsv_s": 0.7,
+  "hsv_v": 0.4,
+  "degrees": 15.0,
+  "scale": 0.5,
+  "perspective": 0.0005
+ },
+ "config_A": {
+  "lr0": 0.01,
+  "momentum": 0.937,
+  "weight_decay": 0.0005,
+  "optimizer": "SGD",
+  "imgsz": 640,
+  "batch": 16
+ },
+ "table2": {
+  "yolov10n": {
+   "lr0": 0.0008165,
+   "momentum": 0.7214,
+   "weight_decay": 0.007325,
+   "optimizer": "AdamW",
+   "imgsz": 640,
+   "batch": 8
+  },
+  "yolov10s": {
+   "lr0": 0.004844,
+   "momentum": 0.6548,
+   "weight_decay": 0.00144,
+   "optimizer": "SGD",
+   "imgsz": 640,
+   "batch": 8
+  },
+  "yolov10m": {
+   "lr0": 1.2e-05,
+   "momentum": 0.6515,
+   "weight_decay": 3.227e-05,
+   "optimizer": "AdamW",
+   "imgsz": 512,
+   "batch": 16
+  },
+  "yolov10b": {
+   "lr0": 7.372e-05,
+   "momentum": 0.6657,
+   "weight_decay": 0.000686,
+   "optimizer": "Adam",
+   "imgsz": 640,
+   "batch": 8
+  },
+  "yolov10l": {
+   "lr0": 6.751e-05,
+   "momentum": 0.6826,
+   "weight_decay": 0.000281,
+   "optimizer": "Adam",
+   "imgsz": 416,
+   "batch": 16
+  },
+  "yolov10x": {
+   "lr0": 0.0002178,
+   "momentum": 0.6555,
+   "weight_decay": 0.000694,
+   "optimizer": "AdamW",
+   "imgsz": 512,
+   "batch": 4
+  },
+  "yolo11n": {
+   "lr0": 0.0003508,
+   "momentum": 0.8645,
+   "weight_decay": 2.089e-05,
+   "optimizer": "AdamW",
+   "imgsz": 512,
+   "batch": 4
+  },
+  "yolo11s": {
+   "lr0": 0.0001352,
+   "momentum": 0.6451,
+   "weight_decay": 1.031e-05,
+   "optimizer": "Adam",
+   "imgsz": 512,
+   "batch": 16
+  },
+  "yolo11m": {
+   "lr0": 0.0001069,
+   "momentum": 0.7743,
+   "weight_decay": 5.016e-06,
+   "optimizer": "Adam",
+   "imgsz": 640,
+   "batch": 16
+  },
+  "yolo11l": {
+   "lr0": 0.008471,
+   "momentum": 0.707,
+   "weight_decay": 0.00019,
+   "optimizer": "SGD",
+   "imgsz": 640,
+   "batch": 16
+  },
+  "yolo11x": {
+   "lr0": 0.002667,
+   "momentum": 0.8046,
+   "weight_decay": 0.000327,
+   "optimizer": "SGD",
+   "imgsz": 640,
+   "batch": 4
+  }
+ }
+}

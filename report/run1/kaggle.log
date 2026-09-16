@@ -1,0 +1,484 @@
+6.3s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.3s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.3s 3 0.00s - to python to disable frozen modules.
+6.3s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+6.8s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.8s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.8s 7 0.00s - to python to disable frozen modules.
+6.8s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+10.6s 9 [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/898.5 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m898.5/898.5 kB[0m [31m39.4 MB/s[0m eta [36m0:00:00[0m
+13.4s 10 [?25hNote: you may need to restart the kernel to use updated packages.
+18.4s 11 Creating new Ultralytics Settings v0.0.6 file ✅
+18.4s 12 View Ultralytics Settings with 'yolo settings' or at '/root/.config/Ultralytics/settings.json'
+18.4s 13 Update Settings with 'yolo settings key=value', i.e. 'yolo settings runs_dir=path/to/dir'. For help see https://docs.ultralytics.com/quickstart/#ultralytics-settings.
+30.3s 14 python 3.12.13 | torch 2.10.0+cu128 | ultralytics 8.3.40 | transformers 5.0.0
+30.3s 15 GPUs: ['Tesla T4', 'Tesla T4']
+30.3s 16 work dir /kaggle/working | results -> results/ | SMOKE=False
+30.4s 17 no previous results attached - starting from scratch
+30.5s 18 Fig. 6 -> acc 0.8803  F1 macro 0.8821  F1 malignant 0.8254  bootstrap CI95(acc) [0.8205, 0.9318]   paper CI [0.8156, 0.9348]
+30.5s 19 metric definitions reproduce the paper's Table 3 yolov10b row exactly
+35.9s 20 BUSI root: /kaggle/input/datasets/sabahesaraki/breast-ultrasound-images-dataset/Dataset_BUSI_with_GT
+56.3s 21 780 images kept  benign=437  malignant=210  normal=133
+57.6s 22 near-duplicate pairs (hamming <= 6): 202  of which hamming 0: 35
+57.6s 23 train benign=305  malignant=147  normal= 93  total=545
+57.6s 24 val   benign= 66  malignant= 32  normal= 20  total=118
+57.6s 25 test  benign= 66  malignant= 31  normal= 20  total=117
+57.6s 26 Gate 0 passed: test split is 66/31/20 = 117, as in the paper
+74.4s 27 train benign    305 originals + 1 augmented = 306
+78.4s 28 train malignant 147 originals + 159 augmented = 306
+85.0s 29 train normal    93 originals + 213 augmented = 306
+85.0s 30 images on disk: {'train': 918, 'val': 118, 'test': 117} | data.yaml written
+85.2s 31 pairs straddling the test boundary: 51
+85.2s 32 test images with a near-duplicate in train or val: 43 / 117 = 37%  (benign=30  malignant=5  normal=8)
+85.2s 33 cross-class duplicate pairs (same scan, different label): 10
+85.2s 34 a  a_cls               b     b_cls  hamming a_split b_split
+85.2s 35 benign (433) benign malignant (145) malignant        0     val     val
+85.2s 36 benign (131) benign  malignant (51) malignant        4     val   train
+85.2s 37 benign (42) benign  malignant (51) malignant        2     val   train
+85.2s 38 benign (164) benign  malignant (52) malignant        4   train    test
+85.2s 39 benign (85) benign  malignant (52) malignant        4    test    test
+85.2s 40 benign (333) benign  malignant (77) malignant        4     val   train
+85.2s 41 benign (399) benign  malignant (93) malignant        2    test    test
+85.2s 42 benign (406) benign  malignant (94) malignant        0   train   train
+85.2s 43 benign (269) benign      normal (1)    normal        4   train     val
+85.2s 44 benign (437) benign     normal (34)    normal        3   train    test
+86.4s 45 Downloading https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov10n.pt to '/kaggle/working/weights/yolov10n.pt'...
+86.6s 46 0%|          | 0.00/5.59M [00:00<?, ?B/s]
+86.7s 47 0%|          | 0.00/5.59M [00:00<?, ?B/s]100%|██████████| 5.59M/5.59M [00:00<00:00, 140MB/s]
+86.8s 48 Downloading https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov10s.pt to '/kaggle/working/weights/yolov10s.pt'...
+86.8s 49 100%|██████████| 5.59M/5.59M [00:00<00:00, 140MB/s]
+86.8s 50 
+86.8s 51 
+87.0s 52 0%|          | 0.00/15.9M [00:00<?, ?B/s]
+87.1s 53 0%|          | 0.00/15.9M [00:00<?, ?B/s]100%|██████████| 15.9M/15.9M [00:00<00:00, 188MB/s]
+87.2s 54 Downloading https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov10m.pt to '/kaggle/working/weights/yolov10m.pt'...
+87.2s 55 100%|██████████| 15.9M/15.9M [00:00<00:00, 188MB/s]
+87.2s 56 
+87.2s 57 
+87.4s 58 0%|          | 0.00/32.1M [00:00<?, ?B/s]
+87.5s 59 0%|          | 0.00/32.1M [00:00<?, ?B/s] 87%|████████▋ | 28.0M/32.1M [00:00<00:00, 293MB/s]
+87.5s 60 87%|████████▋ | 28.0M/32.1M [00:00<00:00, 293MB/s]100%|██████████| 32.1M/32.1M [00:00<00:00, 272MB/s]
+87.6s 61 100%|██████████| 32.1M/32.1M [00:00<00:00, 272MB/s]
+87.6s 62 
+87.6s 63 
+87.6s 64 Downloading https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov10b.pt to '/kaggle/working/weights/yolov10b.pt'...
+87.8s 65 0%|          | 0.00/39.7M [00:00<?, ?B/s]
+87.9s 66 0%|          | 0.00/39.7M [00:00<?, ?B/s] 44%|████▍     | 17.6M/39.7M [00:00<00:00, 174MB/s]
+88.0s 67 44%|████▍     | 17.6M/39.7M [00:00<00:00, 174MB/s]100%|██████████| 39.7M/39.7M [00:00<00:00, 238MB/s]
+88.0s 68 100%|██████████| 39.7M/39.7M [00:00<00:00, 238MB/s]
+88.0s 69 
+88.0s 70 
+88.1s 71 Downloading https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov10l.pt to '/kaggle/working/weights/yolov10l.pt'...
+88.4s 72 0%|          | 0.00/50.0M [00:00<?, ?B/s]
+88.5s 73 0%|          | 0.00/50.0M [00:00<?, ?B/s] 23%|██▎       | 11.6M/50.0M [00:00<00:00, 122MB/s]
+88.6s 74 23%|██▎       | 11.6M/50.0M [00:00<00:00, 122MB/s] 83%|████████▎ | 41.4M/50.0M [00:00<00:00, 233MB/s]
+88.6s 75 83%|████████▎ | 41.4M/50.0M [00:00<00:00, 233MB/s]100%|██████████| 50.0M/50.0M [00:00<00:00, 238MB/s]
+88.7s 76 100%|██████████| 50.0M/50.0M [00:00<00:00, 238MB/s]
+88.7s 77 
+88.7s 78 
+88.7s 79 Downloading https://github.com/ultralytics/assets/releases/download/v8.3.0/yolov10x.pt to '/kaggle/working/weights/yolov10x.pt'...
+89.0s 80 0%|          | 0.00/61.4M [00:00<?, ?B/s]
+89.1s 81 0%|          | 0.00/61.4M [00:00<?, ?B/s] 49%|████▉     | 30.2M/61.4M [00:00<00:00, 309MB/s]
+89.2s 82 49%|████▉     | 30.2M/61.4M [00:00<00:00, 309MB/s] 97%|█████████▋| 59.8M/61.4M [00:00<00:00, 292MB/s]
+89.2s 83 97%|█████████▋| 59.8M/61.4M [00:00<00:00, 292MB/s]100%|██████████| 61.4M/61.4M [00:00<00:00, 280MB/s]
+89.3s 84 100%|██████████| 61.4M/61.4M [00:00<00:00, 280MB/s]
+89.3s 85 
+89.3s 86 
+89.4s 87 Downloading https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11n.pt to '/kaggle/working/weights/yolo11n.pt'...
+89.6s 88 0%|          | 0.00/5.35M [00:00<?, ?B/s]
+89.6s 89 0%|          | 0.00/5.35M [00:00<?, ?B/s]100%|██████████| 5.35M/5.35M [00:00<00:00, 209MB/s]
+89.7s 90 Downloading https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11s.pt to '/kaggle/working/weights/yolo11s.pt'...
+89.8s 91 100%|██████████| 5.35M/5.35M [00:00<00:00, 209MB/s]
+89.8s 92 
+89.8s 93 
+89.9s 94 0%|          | 0.00/18.4M [00:00<?, ?B/s]
+90.0s 95 0%|          | 0.00/18.4M [00:00<?, ?B/s]100%|██████████| 18.4M/18.4M [00:00<00:00, 222MB/s]
+90.1s 96 100%|██████████| 18.4M/18.4M [00:00<00:00, 222MB/s]
+90.1s 97 
+90.1s 98 
+90.2s 99 Downloading https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11m.pt to '/kaggle/working/weights/yolo11m.pt'...
+90.4s 100 0%|          | 0.00/38.8M [00:00<?, ?B/s]
+90.5s 101 0%|          | 0.00/38.8M [00:00<?, ?B/s] 53%|█████▎    | 20.6M/38.8M [00:00<00:00, 214MB/s]
+90.6s 102 53%|█████▎    | 20.6M/38.8M [00:00<00:00, 214MB/s]100%|██████████| 38.8M/38.8M [00:00<00:00, 203MB/s]
+90.7s 103 Downloading https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11l.pt to '/kaggle/working/weights/yolo11l.pt'...
+90.7s 104 100%|██████████| 38.8M/38.8M [00:00<00:00, 203MB/s]
+90.7s 105 
+90.7s 106 
+90.9s 107 0%|          | 0.00/49.0M [00:00<?, ?B/s]
+91.0s 108 0%|          | 0.00/49.0M [00:00<?, ?B/s] 41%|████      | 20.1M/49.0M [00:00<00:00, 208MB/s]
+91.1s 109 41%|████      | 20.1M/49.0M [00:00<00:00, 208MB/s]100%|██████████| 49.0M/49.0M [00:00<00:00, 265MB/s]
+91.1s 110 100%|██████████| 49.0M/49.0M [00:00<00:00, 265MB/s]
+91.1s 111 
+91.1s 112 
+91.3s 113 Downloading https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo11x.pt to '/kaggle/working/weights/yolo11x.pt'...
+91.5s 114 0%|          | 0.00/109M [00:00<?, ?B/s]
+91.7s 115 0%|          | 0.00/109M [00:00<?, ?B/s] 28%|██▊       | 30.1M/109M [00:00<00:00, 201MB/s]
+91.8s 116 28%|██▊       | 30.1M/109M [00:00<00:00, 201MB/s] 55%|█████▍    | 60.1M/109M [00:00<00:00, 197MB/s]
+92.0s 117 55%|█████▍    | 60.1M/109M [00:00<00:00, 197MB/s] 82%|████████▏ | 90.1M/109M [00:00<00:00, 224MB/s]
+92.0s 118 82%|████████▏ | 90.1M/109M [00:00<00:00, 224MB/s]100%|██████████| 109M/109M [00:00<00:00, 239MB/s]
+92.0s 119 100%|██████████| 109M/109M [00:00<00:00, 239MB/s]
+92.0s 120 
+92.0s 121 
+92.2s 122 Gate 1 passed: yolo11l.pt 51MB, yolo11m.pt 41MB, yolo11n.pt 6MB, yolo11s.pt 19MB, yolo11x.pt 115MB, yolov10b.pt 42MB, yolov10l.pt 52MB, yolov10m.pt 34MB, yolov10n.pt 6MB, yolov10s.pt 17MB, yolov10x.pt 64MB
+92.3s 123 Writing train_worker.py
+92.3s 124 16 run(s) to train, ~847 T4-minutes: ['yolov10b_B', 'yolov10b_A', 'yolov10n_B', 'yolov10n_A', 'yolo11s_B', 'yolo11s_A', 'yolov10x_B', 'yolo11x_B', 'yolov10l_B', 'yolo11l_B', 'yolov10m_B', 'yolo11m_B', 'yolov10s_B', 'yolo11n_B', 'yolov10b_B_s7', 'yolov10b_B_s1337']
+92.4s 125 [   1.2 min] > yolov10b_B started on GPU0
+92.4s 126 [   1.2 min] > yolov10b_A started on GPU1
+92.4s 127 [   1.2 min] running: yolov10b_B @ epoch 0, yolov10b_A @ epoch 0 | 14 pending
+392.4s 128 [   6.2 min] running: yolov10b_B @ epoch 4, yolov10b_A @ epoch 4 | 14 pending
+692.4s 129 [  11.2 min] running: yolov10b_B @ epoch 10, yolov10b_A @ epoch 11 | 14 pending
+992.4s 130 [  16.2 min] running: yolov10b_B @ epoch 16, yolov10b_A @ epoch 18 | 14 pending
+1292.4s 131 [  21.2 min] running: yolov10b_B @ epoch 22, yolov10b_A @ epoch 25 | 14 pending
+1592.4s 132 [  26.2 min] running: yolov10b_B @ epoch 28, yolov10b_A @ epoch 31 | 14 pending
+1892.5s 133 [  31.2 min] running: yolov10b_B @ epoch 34, yolov10b_A @ epoch 38 | 14 pending
+2192.5s 134 [  36.2 min] running: yolov10b_B @ epoch 40, yolov10b_A @ epoch 45 | 14 pending
+2492.5s 135 [  41.2 min] running: yolov10b_B @ epoch 47, yolov10b_A @ epoch 51 | 14 pending
+2792.5s 136 [  46.2 min] running: yolov10b_B @ epoch 53, yolov10b_A @ epoch 58 | 14 pending
+3092.5s 137 [  51.2 min] running: yolov10b_B @ epoch 59, yolov10b_A @ epoch 65 | 14 pending
+3392.5s 138 [  56.2 min] running: yolov10b_B @ epoch 65, yolov10b_A @ epoch 72 | 14 pending
+3692.5s 139 [  61.2 min] running: yolov10b_B @ epoch 71, yolov10b_A @ epoch 78 | 14 pending
+3992.5s 140 [  66.2 min] running: yolov10b_B @ epoch 77, yolov10b_A @ epoch 85 | 14 pending
+4292.5s 141 [  71.2 min] running: yolov10b_B @ epoch 83, yolov10b_A @ epoch 92 | 14 pending
+4592.5s 142 [  76.2 min] running: yolov10b_B @ epoch 89, yolov10b_A @ epoch 98 | 14 pending
+4892.5s 143 [  81.2 min] running: yolov10b_B @ epoch 96, yolov10b_A @ epoch 105 | 14 pending
+4982.5s 144 [  82.7 min] OK yolov10b_A: 82 min, 107 epochs (best 77), test mAP50 0.626, acc 0.6667, F1 0.6619
+4992.5s 145 [  82.9 min] > yolov10n_B started on GPU1
+5192.6s 146 [  86.2 min] running: yolov10b_B @ epoch 102, yolov10n_B @ epoch 5 | 13 pending
+5492.6s 147 [  91.2 min] running: yolov10b_B @ epoch 107, yolov10n_B @ epoch 20 | 13 pending
+5792.6s 148 [  96.2 min] running: yolov10b_B @ epoch 113, yolov10n_B @ epoch 35 | 13 pending
+6092.6s 149 [ 101.2 min] running: yolov10b_B @ epoch 119, yolov10n_B @ epoch 49 | 13 pending
+6392.6s 150 [ 106.2 min] running: yolov10b_B @ epoch 124, yolov10n_B @ epoch 64 | 13 pending
+6692.7s 151 [ 111.2 min] running: yolov10b_B @ epoch 130, yolov10n_B @ epoch 78 | 13 pending
+6842.6s 152 [ 113.7 min] OK yolov10n_B: 31 min, 85 epochs (best 55), test mAP50 0.594, acc 0.7265, F1 0.7142
+6852.6s 153 [ 113.9 min] > yolov10n_A started on GPU1
+6992.7s 154 [ 116.2 min] running: yolov10b_B @ epoch 136, yolov10n_A @ epoch 4 | 12 pending
+7292.7s 155 [ 121.2 min] running: yolov10b_B @ epoch 142, yolov10n_A @ epoch 23 | 12 pending
+7482.7s 156 [ 124.4 min] OK yolov10b_B: 123 min, 145 epochs (best 115), test mAP50 0.832, acc 0.8803, F1 0.8638
+7492.7s 157 [ 124.6 min] > yolo11s_B started on GPU0
+7592.8s 158 [ 126.2 min] running: yolov10n_A @ epoch 43, yolo11s_B @ epoch 1 | 11 pending
+7892.7s 159 [ 131.2 min] running: yolov10n_A @ epoch 59, yolo11s_B @ epoch 21 | 11 pending
+8192.8s 160 [ 136.2 min] running: yolov10n_A @ epoch 76, yolo11s_B @ epoch 40 | 11 pending
+8492.8s 161 [ 141.2 min] running: yolov10n_A @ epoch 93, yolo11s_B @ epoch 60 | 11 pending
+8792.8s 162 [ 146.2 min] running: yolov10n_A @ epoch 110, yolo11s_B @ epoch 80 | 11 pending
+9092.8s 163 [ 151.2 min] running: yolov10n_A @ epoch 127, yolo11s_B @ epoch 99 | 11 pending
+9132.8s 164 [ 151.9 min] OK yolo11s_B: 27 min, 101 epochs (best 71), test mAP50 0.807, acc 0.8205, F1 0.7891
+9142.8s 165 [ 152.1 min] > yolo11s_A started on GPU0
+9182.8s 166 [ 152.7 min] OK yolov10n_A: 39 min, 132 epochs (best 102), test mAP50 0.548, acc 0.7094, F1 0.7010
+9192.8s 167 [ 152.9 min] > yolov10x_B started on GPU1
+9392.9s 168 [ 156.2 min] running: yolo11s_A @ epoch 10, yolov10x_B @ epoch 1 | 9 pending
+9692.9s 169 [ 161.2 min] running: yolo11s_A @ epoch 26, yolov10x_B @ epoch 6 | 9 pending
+9992.9s 170 [ 166.2 min] running: yolo11s_A @ epoch 43, yolov10x_B @ epoch 11 | 9 pending
+10292.9s 171 [ 171.2 min] running: yolo11s_A @ epoch 60, yolov10x_B @ epoch 16 | 9 pending
+10592.9s 172 [ 176.2 min] running: yolo11s_A @ epoch 77, yolov10x_B @ epoch 20 | 9 pending
+10892.9s 173 [ 181.2 min] running: yolo11s_A @ epoch 93, yolov10x_B @ epoch 25 | 9 pending
+11192.9s 174 [ 186.2 min] running: yolo11s_A @ epoch 110, yolov10x_B @ epoch 30 | 9 pending
+11492.9s 175 [ 191.2 min] running: yolo11s_A @ epoch 127, yolov10x_B @ epoch 34 | 9 pending
+11792.9s 176 [ 196.2 min] running: yolo11s_A @ epoch 144, yolov10x_B @ epoch 39 | 9 pending
+12093.0s 177 [ 201.2 min] running: yolo11s_A @ epoch 160, yolov10x_B @ epoch 44 | 9 pending
+12393.0s 178 [ 206.2 min] running: yolo11s_A @ epoch 177, yolov10x_B @ epoch 49 | 9 pending
+12693.0s 179 [ 211.2 min] running: yolo11s_A @ epoch 194, yolov10x_B @ epoch 53 | 9 pending
+12813.0s 180 [ 213.2 min] OK yolo11s_A: 61 min, 200 epochs (best 200), test mAP50 0.808, acc 0.8205, F1 0.8118
+12823.0s 181 [ 213.4 min] > yolo11x_B started on GPU0
+12993.0s 182 [ 216.2 min] running: yolov10x_B @ epoch 59, yolo11x_B @ epoch 1 | 8 pending
+13293.0s 183 [ 221.2 min] running: yolov10x_B @ epoch 64, yolo11x_B @ epoch 4 | 8 pending
+13593.0s 184 [ 226.2 min] running: yolov10x_B @ epoch 69, yolo11x_B @ epoch 8 | 8 pending
+13893.0s 185 [ 231.2 min] running: yolov10x_B @ epoch 74, yolo11x_B @ epoch 12 | 8 pending
+14193.0s 186 [ 236.2 min] running: yolov10x_B @ epoch 79, yolo11x_B @ epoch 15 | 8 pending
+14493.0s 187 [ 241.2 min] running: yolov10x_B @ epoch 85, yolo11x_B @ epoch 19 | 8 pending
+14793.0s 188 [ 246.2 min] running: yolov10x_B @ epoch 90, yolo11x_B @ epoch 22 | 8 pending
+15093.1s 189 [ 251.2 min] running: yolov10x_B @ epoch 95, yolo11x_B @ epoch 26 | 8 pending
+15393.1s 190 [ 256.2 min] running: yolov10x_B @ epoch 100, yolo11x_B @ epoch 30 | 8 pending
+15693.1s 191 [ 261.2 min] running: yolov10x_B @ epoch 106, yolo11x_B @ epoch 33 | 8 pending
+15993.1s 192 [ 266.2 min] running: yolov10x_B @ epoch 111, yolo11x_B @ epoch 37 | 8 pending
+16293.1s 193 [ 271.2 min] running: yolov10x_B @ epoch 116, yolo11x_B @ epoch 40 | 8 pending
+16593.1s 194 [ 276.2 min] running: yolov10x_B @ epoch 121, yolo11x_B @ epoch 44 | 8 pending
+16893.1s 195 [ 281.2 min] running: yolov10x_B @ epoch 127, yolo11x_B @ epoch 48 | 8 pending
+17193.1s 196 [ 286.2 min] running: yolov10x_B @ epoch 132, yolo11x_B @ epoch 51 | 8 pending
+17493.1s 197 [ 291.2 min] running: yolov10x_B @ epoch 137, yolo11x_B @ epoch 55 | 8 pending
+17793.1s 198 [ 296.2 min] running: yolov10x_B @ epoch 142, yolo11x_B @ epoch 58 | 8 pending
+18093.1s 199 [ 301.2 min] running: yolov10x_B @ epoch 147, yolo11x_B @ epoch 62 | 8 pending
+18303.1s 200 [ 304.7 min] OK yolov10x_B: 152 min, 151 epochs (best 121), test mAP50 0.789, acc 0.7863, F1 0.7563
+18313.1s 201 [ 304.9 min] > yolov10l_B started on GPU1
+18393.1s 202 [ 306.2 min] running: yolo11x_B @ epoch 66, yolov10l_B @ epoch 0 | 7 pending
+18693.2s 203 [ 311.2 min] running: yolo11x_B @ epoch 69, yolov10l_B @ epoch 11 | 7 pending
+18993.2s 204 [ 316.2 min] running: yolo11x_B @ epoch 73, yolov10l_B @ epoch 22 | 7 pending
+19293.2s 205 [ 321.2 min] running: yolo11x_B @ epoch 76, yolov10l_B @ epoch 33 | 7 pending
+19593.2s 206 [ 326.2 min] running: yolo11x_B @ epoch 80, yolov10l_B @ epoch 44 | 7 pending
+19893.2s 207 [ 331.2 min] running: yolo11x_B @ epoch 83, yolov10l_B @ epoch 55 | 7 pending
+20193.2s 208 [ 336.3 min] running: yolo11x_B @ epoch 87, yolov10l_B @ epoch 66 | 7 pending
+20493.2s 209 [ 341.3 min] running: yolo11x_B @ epoch 91, yolov10l_B @ epoch 77 | 7 pending
+20793.2s 210 [ 346.3 min] running: yolo11x_B @ epoch 94, yolov10l_B @ epoch 87 | 7 pending
+21093.2s 211 [ 351.3 min] running: yolo11x_B @ epoch 98, yolov10l_B @ epoch 98 | 7 pending
+21393.2s 212 [ 356.3 min] running: yolo11x_B @ epoch 101, yolov10l_B @ epoch 109 | 7 pending
+21693.2s 213 [ 361.3 min] running: yolo11x_B @ epoch 105, yolov10l_B @ epoch 120 | 7 pending
+21993.3s 214 [ 366.3 min] running: yolo11x_B @ epoch 108, yolov10l_B @ epoch 131 | 7 pending
+22293.3s 215 [ 371.3 min] running: yolo11x_B @ epoch 112, yolov10l_B @ epoch 142 | 7 pending
+22593.3s 216 [ 376.3 min] running: yolo11x_B @ epoch 116, yolov10l_B @ epoch 152 | 7 pending
+22893.3s 217 [ 381.3 min] running: yolo11x_B @ epoch 119, yolov10l_B @ epoch 163 | 7 pending
+23063.3s 218 [ 384.1 min] OK yolov10l_B: 79 min, 169 epochs (best 139), test mAP50 0.810, acc 0.8632, F1 0.8417
+23073.3s 219 [ 384.3 min] > yolo11l_B started on GPU1
+23143.3s 220 [ 385.4 min] OK yolo11x_B: 172 min, 122 epochs (best 92), test mAP50 0.785, acc 0.8034, F1 0.7830
+23153.3s 221 [ 385.6 min] > yolov10m_B started on GPU0
+23193.3s 222 [ 386.3 min] running: yolo11l_B @ epoch 1, yolov10m_B @ epoch 0 | 5 pending
+23493.4s 223 [ 391.3 min] running: yolo11l_B @ epoch 8, yolov10m_B @ epoch 10 | 5 pending
+23793.3s 224 [ 396.3 min] running: yolo11l_B @ epoch 15, yolov10m_B @ epoch 21 | 5 pending
+24093.4s 225 [ 401.3 min] running: yolo11l_B @ epoch 21, yolov10m_B @ epoch 33 | 5 pending
+24393.4s 226 [ 406.3 min] running: yolo11l_B @ epoch 28, yolov10m_B @ epoch 44 | 5 pending
+24693.4s 227 [ 411.3 min] running: yolo11l_B @ epoch 35, yolov10m_B @ epoch 56 | 5 pending
+24993.4s 228 [ 416.3 min] running: yolo11l_B @ epoch 42, yolov10m_B @ epoch 67 | 5 pending
+25293.4s 229 [ 421.3 min] running: yolo11l_B @ epoch 48, yolov10m_B @ epoch 79 | 5 pending
+25593.4s 230 [ 426.3 min] running: yolo11l_B @ epoch 55, yolov10m_B @ epoch 90 | 5 pending
+25893.4s 231 [ 431.3 min] running: yolo11l_B @ epoch 62, yolov10m_B @ epoch 102 | 5 pending
+26193.4s 232 [ 436.3 min] running: yolo11l_B @ epoch 69, yolov10m_B @ epoch 113 | 5 pending
+26493.4s 233 [ 441.3 min] running: yolo11l_B @ epoch 76, yolov10m_B @ epoch 125 | 5 pending
+26793.4s 234 [ 446.3 min] running: yolo11l_B @ epoch 82, yolov10m_B @ epoch 136 | 5 pending
+27093.4s 235 [ 451.3 min] running: yolo11l_B @ epoch 89, yolov10m_B @ epoch 147 | 5 pending
+27393.5s 236 [ 456.3 min] running: yolo11l_B @ epoch 96, yolov10m_B @ epoch 159 | 5 pending
+27433.4s 237 [ 456.9 min] OK yolov10m_B: 71 min, 160 epochs (best 130), test mAP50 0.785, acc 0.8291, F1 0.7912
+27443.4s 238 [ 457.1 min] > yolo11m_B started on GPU0
+27693.5s 239 [ 461.3 min] running: yolo11l_B @ epoch 103, yolo11m_B @ epoch 5 | 4 pending
+27993.5s 240 [ 466.3 min] running: yolo11l_B @ epoch 110, yolo11m_B @ epoch 13 | 4 pending
+28293.5s 241 [ 471.3 min] running: yolo11l_B @ epoch 116, yolo11m_B @ epoch 21 | 4 pending
+28593.5s 242 [ 476.3 min] running: yolo11l_B @ epoch 123, yolo11m_B @ epoch 30 | 4 pending
+28893.5s 243 [ 481.3 min] running: yolo11l_B @ epoch 130, yolo11m_B @ epoch 38 | 4 pending
+28943.5s 244 [ 482.1 min] OK yolo11l_B: 98 min, 131 epochs (best 101), test mAP50 0.808, acc 0.8120, F1 0.7888
+28953.5s 245 [ 482.3 min] > yolov10s_B started on GPU1
+29193.5s 246 [ 486.3 min] running: yolo11m_B @ epoch 46, yolov10s_B @ epoch 6 | 3 pending
+29493.5s 247 [ 491.3 min] running: yolo11m_B @ epoch 54, yolov10s_B @ epoch 17 | 3 pending
+29793.5s 248 [ 496.3 min] running: yolo11m_B @ epoch 62, yolov10s_B @ epoch 29 | 3 pending
+30093.6s 249 [ 501.3 min] running: yolo11m_B @ epoch 70, yolov10s_B @ epoch 41 | 3 pending
+30393.6s 250 [ 506.3 min] running: yolo11m_B @ epoch 78, yolov10s_B @ epoch 53 | 3 pending
+30693.6s 251 [ 511.3 min] running: yolo11m_B @ epoch 86, yolov10s_B @ epoch 65 | 3 pending
+30993.6s 252 [ 516.3 min] OK yolov10s_B: 34 min, 76 epochs (best 46), test mAP50 0.757, acc 0.8034, F1 0.7715
+30993.6s 253 [ 516.3 min] running: yolo11m_B @ epoch 94 | 3 pending
+31003.6s 254 [ 516.4 min] > yolo11n_B started on GPU1
+31293.6s 255 [ 521.3 min] running: yolo11m_B @ epoch 102, yolo11n_B @ epoch 8 | 2 pending
+31593.6s 256 [ 526.3 min] running: yolo11m_B @ epoch 109, yolo11n_B @ epoch 20 | 2 pending
+31893.6s 257 [ 531.3 min] running: yolo11m_B @ epoch 117, yolo11n_B @ epoch 32 | 2 pending
+32193.6s 258 [ 536.3 min] running: yolo11m_B @ epoch 125, yolo11n_B @ epoch 43 | 2 pending
+32363.6s 259 [ 539.1 min] OK yolo11m_B: 82 min, 129 epochs (best 99), test mAP50 0.772, acc 0.8376, F1 0.8116
+32493.7s 260 [ 541.3 min] running: yolo11n_B @ epoch 56 | 2 pending
+32793.7s 261 [ 546.3 min] running: yolo11n_B @ epoch 71 | 2 pending
+33093.7s 262 [ 551.3 min] running: yolo11n_B @ epoch 87 | 2 pending
+33393.7s 263 [ 556.3 min] running: yolo11n_B @ epoch 102 | 2 pending
+33693.7s 264 [ 561.3 min] running: yolo11n_B @ epoch 117 | 2 pending
+33993.7s 265 [ 566.3 min] running: yolo11n_B @ epoch 132 | 2 pending
+34293.7s 266 [ 571.3 min] running: yolo11n_B @ epoch 148 | 2 pending
+34333.7s 267 [ 571.9 min] OK yolo11n_B: 56 min, 149 epochs (best 119), test mAP50 0.721, acc 0.7692, F1 0.7409
+34343.7s 268 
+34343.7s 269 training finished at 572 min: 14 ok, 0 failed, 2 not started
+34343.7s 270 NOT STARTED (time budget) - attach this version's output as an input and run again: ['yolov10b_B_s7', 'yolov10b_B_s1337']
+34347.7s 271 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+34347.7s 272 
+34347.7s 273 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+34354.0s 274 The tied weights mapping and config for this model specifies to tie shared_image_embedding.positional_embedding to prompt_encoder.shared_embedding.positional_embedding, but both are present in the checkpoints, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning
+34354.0s 275 
+34354.0s 276 The tied weights mapping and config for this model specifies to tie shared_image_embedding.positional_embedding to prompt_encoder.shared_embedding.positional_embedding, but both are present in the checkpoints, so we will NOT tie them. You should update the config with `tie_word_embeddings=False` to silence this warning
+34355.0s 277 (a) MedSAM loaded on cuda; 117 test images
+34541.2s 278 recipe                                Dice benign  Dice malig  Dice all  IoU all    (paper: 0.9396 / 0.9178 / 0.9326 / 0.876)
+34541.2s 279 official (squash + min-max)                0.7529      0.6856    0.7314   0.5996
+34541.2s 280 HF SamProcessor (pad + ImageNet)           0.7805      0.7001    0.7548   0.6392
+34541.2s 281 squash + ImageNet                          0.8813      0.8443    0.8695   0.7783
+34541.2s 282 pad + min-max                              0.7513      0.6485    0.7184   0.5864
+34541.2s 283 (186s)
+34541.2s 284 
+34541.2s 285 fusion recipe: squash + ImageNet - fixed a priori: MedSAM's training geometry (1024x1024 squash) with the normalisation the HF checkpoint ships with (ImageNet mean/std); not selected on the test set
+34541.2s 286 
+34541.2s 287 n    Dice  (paper)  IoU true  (paper)  IoU pred-head
+34541.2s 288 benign      66  0.8813   0.9396    0.7959   0.8879         0.9586
+34541.2s 289 malignant   31  0.8443   0.9178    0.7410   0.8510         0.9724
+34541.2s 290 overall     97  0.8695   0.9326    0.7783   0.8760         0.9630
+34541.2s 291 
+34541.2s 292 correlation between the predicted-IoU head and the true IoU across images: r = 0.323   (a fusion weight is only informative if this is high)
+34556.7s 293 yolo11l_B              1316 boxes
+34565.2s 294 yolo11m_B              2128 boxes
+34573.9s 295 yolo11n_B              2181 boxes
+34584.3s 296 yolo11s_A              2622 boxes
+34589.5s 297 yolo11s_B              1275 boxes
+34593.4s 298 yolo11x_B              906 boxes
+34613.1s 299 yolov10b_A             5035 boxes
+34617.8s 300 yolov10b_B             1159 boxes
+34622.4s 301 yolov10l_B             1124 boxes
+34627.8s 302 yolov10m_B             1311 boxes
+34646.7s 303 yolov10n_A             4852 boxes
+34662.4s 304 yolov10n_B             3992 boxes
+34667.7s 305 yolov10s_B             1310 boxes
+34672.9s 306 yolov10x_B             1284 boxes
+34672.9s 307 fused in 132s
+34676.2s 308 TABLE 3  (Config B = Table 2 hyperparameters, no MedSAM)  (delta) = ours - paper
+34676.2s 309 | Model    | Accuracy         | F1 macro         | F1 benign        | F1 malignant     | F1 normal        | test mAP50       | val mAP50 (vs T2) | epochs / time              |
+34676.2s 310 |----------|------------------|------------------|------------------|------------------|------------------|------------------|-------------------|----------------------------|
+34676.2s 311 | yolov10n | 0.7265 (-0.1538) | 0.7142 (-0.1571) | 0.7692 (-0.1428) | 0.6562 (-0.1620) | 0.7170 (-0.1667) | 0.5938 (-0.1892) | 0.5794 (-0.1747)  | 85 (best 55) / 30.5 min    |
+34676.2s 312 | yolov10s | 0.8034 (-0.0513) | 0.7715 (-0.0724) | 0.8636 (-0.0235) | 0.7451 (-0.0486) | 0.7059 (-0.1452) | 0.7566 (-0.0372) | 0.7163 (-0.1099)  | 76 (best 46) / 33.6 min    |
+34676.2s 313 | yolov10m | 0.8291 (-0.0427) | 0.7912 (-0.0642) | 0.8955 (-0.0136) | 0.7843 (-0.0157) | 0.6939 (-0.1632) | 0.7851 (-0.0032) | 0.7588 (-0.0694)  | 160 (best 130) / 71.0 min  |
+34676.2s 314 | yolov10b | 0.8803 (+0.0000) | 0.8638 (-0.0183) | 0.9104 (+0.0198) | 0.8364 (+0.0110) | 0.8444 (-0.0858) | 0.8319 (+0.0056) | 0.7491 (-0.1027)  | 145 (best 115) / 122.6 min |
+34676.2s 315 | yolov10l | 0.8632 (+0.0256) | 0.8417 (+0.0136) | 0.9091 (+0.0451) | 0.7869 (-0.0000) | 0.8293 (-0.0040) | 0.8103 (+0.0177) | 0.8080 (-0.0230)  | 169 (best 139) / 78.7 min  |
+34676.2s 316 | yolov10x | 0.7863 (-0.0684) | 0.7563 (-0.0860) | 0.8462 (-0.0409) | 0.7170 (-0.0895) | 0.7059 (-0.1274) | 0.7886 (-0.0019) | 0.7357 (-0.0461)  | 151 (best 121) / 151.3 min |
+34676.2s 317 | yolo11n  | 0.7692 (-0.0684) | 0.7409 (-0.0924) | 0.8281 (-0.0380) | 0.7407 (-0.0093) | 0.6538 (-0.2299) | 0.7210 (-0.1229) | 0.7056 (-0.0829)  | 149 (best 119) / 55.1 min  |
+34676.2s 318 | yolo11s  | 0.8205 (-0.0427) | 0.7891 (-0.0665) | 0.8837 (+0.0000) | 0.7636 (-0.0500) | 0.7200 (-0.1496) | 0.8075 (-0.0339) | 0.7451 (-0.1171)  | 101 (best 71) / 27.0 min   |
+34676.2s 319 | yolo11m  | 0.8376 (-0.0086) | 0.8116 (-0.0212) | 0.8923 (+0.0135) | 0.7619 (+0.0119) | 0.7805 (-0.0891) | 0.7720 (-0.0881) | 0.7701 (-0.0700)  | 129 (best 99) / 81.5 min   |
+34676.2s 320 | yolo11l  | 0.8120 (-0.0598) | 0.7888 (-0.0721) | 0.8689 (-0.0319) | 0.7667 (-0.0264) | 0.7308 (-0.1581) | 0.8081 (-0.0053) | 0.7727 (-0.0687)  | 131 (best 101) / 97.4 min  |
+34676.2s 321 | yolo11x  | 0.8034 (-0.0428) | 0.7830 (-0.0542) | 0.8525 (-0.0244) | 0.7797 (+0.0339) | 0.7170 (-0.1719) | 0.7848 (-0.0747) | 0.7642 (-0.0567)  | 122 (best 92) / 171.3 min  |
+34676.2s 322 
+34676.2s 323 TABLE 4  (ablation)
+34676.2s 324 | Model    | Config           | Accuracy         | F1 macro         | F1 malignant     | CI95 acc         | mean AUC | no-det |
+34676.2s 325 |----------|------------------|------------------|------------------|------------------|------------------|----------|--------|
+34676.2s 326 | yolov10b | A: YOLO only     | 0.6667 (-0.1795) | 0.6619 (-0.1695) | 0.6984 (-0.0516) | [0.5812, 0.7521] | 0.8910   | 0      |
+34676.2s 327 | yolov10b | B: +Optuna       | 0.8803 (+0.0000) | 0.8638 (-0.0183) | 0.8364 (+0.0110) | [0.8205, 0.9316] | 0.9554   | 0      |
+34676.2s 328 | yolov10b | C: +MedSAM       | 0.6667 (-0.1880) | 0.6619 (-0.1790) | 0.6984 (-0.0735) | [0.5812, 0.7521] | 0.8816   | 0      |
+34676.2s 329 | yolov10b | D: full pipeline | 0.8803 (+0.0000) | 0.8638 (-0.0183) | 0.8364 (+0.0110) | [0.8205, 0.9316] | 0.9539   | 0      |
+34676.2s 330 | yolov10n | A: YOLO only     | 0.7094 (-0.1111) | 0.7010 (-0.1096) | 0.6667 (-0.1130) | [0.6323, 0.7863] | 0.8656   | 0      |
+34676.2s 331 | yolov10n | B: +Optuna       | 0.7265 (-0.1538) | 0.7142 (-0.1571) | 0.6562 (-0.1620) | [0.6496, 0.8034] | 0.8853   | 0      |
+34676.2s 332 | yolov10n | C: +MedSAM       | 0.7094 (-0.1111) | 0.7010 (-0.1096) | 0.6667 (-0.1130) | [0.6323, 0.7863] | 0.8620   | 0      |
+34676.2s 333 | yolov10n | D: full pipeline | 0.7265 (-0.1453) | 0.7142 (-0.1475) | 0.6562 (-0.1620) | [0.6496, 0.8034] | 0.8833   | 0      |
+34676.2s 334 | yolo11s  | A: YOLO only     | 0.8205 (-0.0171) | 0.8118 (-0.0046) | 0.7647 (-0.0150) | [0.7519, 0.8889] | 0.9236   | 0      |
+34676.2s 335 | yolo11s  | B: +Optuna       | 0.8205 (-0.0427) | 0.7891 (-0.0665) | 0.7636 (-0.0500) | [0.7521, 0.8889] | 0.9283   | 0      |
+34676.2s 336 | yolo11s  | C: +MedSAM       | 0.8205 (-0.0171) | 0.8097 (-0.0067) | 0.7647 (-0.0150) | [0.7521, 0.8889] | 0.9237   | 0      |
+34676.2s 337 | yolo11s  | D: full pipeline | 0.8205 (-0.0342) | 0.7891 (-0.0574) | 0.7636 (-0.0500) | [0.7521, 0.8889] | 0.9262   | 0      |
+34676.2s 338 
+34676.2s 339 Gate 2 yolov10n: Config C == Config A (identical, as in the paper)
+34676.2s 340 Gate 2 yolo11s: Config C differs from A on 2 image(s): ['benign (199)', 'normal (27)']
+34676.2s 341 Gate 3 yolov10b_B: acc 0.8803 = 103/117 vs paper 0.8803 = 103/117 -> PASS
+34676.5s 342 LEAKAGE  (43 of 117 test images have a near-duplicate in train/val)
+34676.5s 343 | Run                | acc all 117 | acc clean test | acc test w/ train twin | F1 all | F1 clean |
+34676.5s 344 |--------------------|-------------|----------------|------------------------|--------|----------|
+34676.5s 345 | yolo11l_B          | 0.8120      | 0.7703 (n=74)  | 0.8837 (n=43)          | 0.7888 | 0.7595   |
+34676.5s 346 | yolo11l_B +MedSAM  | 0.8120      | 0.7703 (n=74)  | 0.8837 (n=43)          | 0.7888 | 0.7595   |
+34676.5s 347 | yolo11m_B          | 0.8376      | 0.8108 (n=74)  | 0.8837 (n=43)          | 0.8116 | 0.7947   |
+34676.5s 348 | yolo11m_B +MedSAM  | 0.8376      | 0.8108 (n=74)  | 0.8837 (n=43)          | 0.8116 | 0.7947   |
+34676.5s 349 | yolo11n_B          | 0.7692      | 0.7838 (n=74)  | 0.7442 (n=43)          | 0.7409 | 0.7572   |
+34676.5s 350 | yolo11n_B +MedSAM  | 0.7778      | 0.7838 (n=74)  | 0.7674 (n=43)          | 0.7482 | 0.7572   |
+34676.5s 351 | yolo11s_A          | 0.8205      | 0.8514 (n=74)  | 0.7674 (n=43)          | 0.8118 | 0.8425   |
+34676.5s 352 | yolo11s_A +MedSAM  | 0.8205      | 0.8514 (n=74)  | 0.7674 (n=43)          | 0.8097 | 0.8425   |
+34676.5s 353 | yolo11s_B          | 0.8205      | 0.8243 (n=74)  | 0.8140 (n=43)          | 0.7891 | 0.8006   |
+34676.5s 354 | yolo11s_B +MedSAM  | 0.8205      | 0.8243 (n=74)  | 0.8140 (n=43)          | 0.7891 | 0.8006   |
+34676.5s 355 | yolo11x_B          | 0.8034      | 0.7703 (n=74)  | 0.8605 (n=43)          | 0.7830 | 0.7580   |
+34676.5s 356 | yolo11x_B +MedSAM  | 0.8034      | 0.7703 (n=74)  | 0.8605 (n=43)          | 0.7830 | 0.7580   |
+34676.5s 357 | yolov10b_A         | 0.6667      | 0.6892 (n=74)  | 0.6279 (n=43)          | 0.6619 | 0.6822   |
+34676.5s 358 | yolov10b_A +MedSAM | 0.6667      | 0.6892 (n=74)  | 0.6279 (n=43)          | 0.6619 | 0.6822   |
+34676.5s 359 | yolov10b_B         | 0.8803      | 0.8649 (n=74)  | 0.9070 (n=43)          | 0.8638 | 0.8546   |
+34676.5s 360 | yolov10b_B +MedSAM | 0.8803      | 0.8649 (n=74)  | 0.9070 (n=43)          | 0.8638 | 0.8546   |
+34676.5s 361 | yolov10l_B         | 0.8632      | 0.8243 (n=74)  | 0.9302 (n=43)          | 0.8417 | 0.8122   |
+34676.5s 362 | yolov10l_B +MedSAM | 0.8547      | 0.8243 (n=74)  | 0.9070 (n=43)          | 0.8297 | 0.8122   |
+34676.5s 363 | yolov10m_B         | 0.8291      | 0.7973 (n=74)  | 0.8837 (n=43)          | 0.7912 | 0.7664   |
+34676.5s 364 | yolov10m_B +MedSAM | 0.8205      | 0.7838 (n=74)  | 0.8837 (n=43)          | 0.7785 | 0.7489   |
+34676.5s 365 | yolov10n_A         | 0.7094      | 0.7027 (n=74)  | 0.7209 (n=43)          | 0.7010 | 0.7020   |
+34676.5s 366 | yolov10n_A +MedSAM | 0.7094      | 0.7027 (n=74)  | 0.7209 (n=43)          | 0.7010 | 0.7020   |
+34676.5s 367 | yolov10n_B         | 0.7265      | 0.7568 (n=74)  | 0.6744 (n=43)          | 0.7142 | 0.7526   |
+34676.5s 368 | yolov10n_B +MedSAM | 0.7265      | 0.7568 (n=74)  | 0.6744 (n=43)          | 0.7142 | 0.7526   |
+34676.5s 369 | yolov10s_B         | 0.8034      | 0.7973 (n=74)  | 0.8140 (n=43)          | 0.7715 | 0.7775   |
+34676.5s 370 | yolov10s_B +MedSAM | 0.8034      | 0.7973 (n=74)  | 0.8140 (n=43)          | 0.7715 | 0.7775   |
+34676.5s 371 | yolov10x_B         | 0.7863      | 0.7838 (n=74)  | 0.7907 (n=43)          | 0.7563 | 0.7636   |
+34676.5s 372 | yolov10x_B +MedSAM | 0.7949      | 0.7838 (n=74)  | 0.8140 (n=43)          | 0.7640 | 0.7636   |
+34677.4s 373 # BUSI replication report (full)
+34677.4s 374 
+34677.4s 375 2026-09-16 05:38 | 578 min | ultralytics 8.3.40 | torch 2.10.0+cu128 | Tesla T4, Tesla T4 | runs: 14 ok, failed [], not started ['yolov10b_B_s7', 'yolov10b_B_s1337']
+34677.4s 376 
+34677.4s 377 Values are ours; `(delta)` = ours - paper.
+34677.4s 378 
+34677.4s 379 ## Table 3 (Config B)
+34677.4s 380 
+34677.4s 381 | Model    | Accuracy         | F1 macro         | F1 benign        | F1 malignant     | F1 normal        | test mAP50       | val mAP50 (vs T2) | epochs / time              |
+34677.4s 382 |----------|------------------|------------------|------------------|------------------|------------------|------------------|-------------------|----------------------------|
+34677.4s 383 | yolov10n | 0.7265 (-0.1538) | 0.7142 (-0.1571) | 0.7692 (-0.1428) | 0.6562 (-0.1620) | 0.7170 (-0.1667) | 0.5938 (-0.1892) | 0.5794 (-0.1747)  | 85 (best 55) / 30.5 min    |
+34677.4s 384 | yolov10s | 0.8034 (-0.0513) | 0.7715 (-0.0724) | 0.8636 (-0.0235) | 0.7451 (-0.0486) | 0.7059 (-0.1452) | 0.7566 (-0.0372) | 0.7163 (-0.1099)  | 76 (best 46) / 33.6 min    |
+34677.4s 385 | yolov10m | 0.8291 (-0.0427) | 0.7912 (-0.0642) | 0.8955 (-0.0136) | 0.7843 (-0.0157) | 0.6939 (-0.1632) | 0.7851 (-0.0032) | 0.7588 (-0.0694)  | 160 (best 130) / 71.0 min  |
+34677.4s 386 | yolov10b | 0.8803 (+0.0000) | 0.8638 (-0.0183) | 0.9104 (+0.0198) | 0.8364 (+0.0110) | 0.8444 (-0.0858) | 0.8319 (+0.0056) | 0.7491 (-0.1027)  | 145 (best 115) / 122.6 min |
+34677.4s 387 | yolov10l | 0.8632 (+0.0256) | 0.8417 (+0.0136) | 0.9091 (+0.0451) | 0.7869 (-0.0000) | 0.8293 (-0.0040) | 0.8103 (+0.0177) | 0.8080 (-0.0230)  | 169 (best 139) / 78.7 min  |
+34677.4s 388 | yolov10x | 0.7863 (-0.0684) | 0.7563 (-0.0860) | 0.8462 (-0.0409) | 0.7170 (-0.0895) | 0.7059 (-0.1274) | 0.7886 (-0.0019) | 0.7357 (-0.0461)  | 151 (best 121) / 151.3 min |
+34677.4s 389 | yolo11n  | 0.7692 (-0.0684) | 0.7409 (-0.0924) | 0.8281 (-0.0380) | 0.7407 (-0.0093) | 0.6538 (-0.2299) | 0.7210 (-0.1229) | 0.7056 (-0.0829)  | 149 (best 119) / 55.1 min  |
+34677.4s 390 | yolo11s  | 0.8205 (-0.0427) | 0.7891 (-0.0665) | 0.8837 (+0.0000) | 0.7636 (-0.0500) | 0.7200 (-0.1496) | 0.8075 (-0.0339) | 0.7451 (-0.1171)  | 101 (best 71) / 27.0 min   |
+34677.4s 391 | yolo11m  | 0.8376 (-0.0086) | 0.8116 (-0.0212) | 0.8923 (+0.0135) | 0.7619 (+0.0119) | 0.7805 (-0.0891) | 0.7720 (-0.0881) | 0.7701 (-0.0700)  | 129 (best 99) / 81.5 min   |
+34677.4s 392 | yolo11l  | 0.8120 (-0.0598) | 0.7888 (-0.0721) | 0.8689 (-0.0319) | 0.7667 (-0.0264) | 0.7308 (-0.1581) | 0.8081 (-0.0053) | 0.7727 (-0.0687)  | 131 (best 101) / 97.4 min  |
+34677.4s 393 | yolo11x  | 0.8034 (-0.0428) | 0.7830 (-0.0542) | 0.8525 (-0.0244) | 0.7797 (+0.0339) | 0.7170 (-0.1719) | 0.7848 (-0.0747) | 0.7642 (-0.0567)  | 122 (best 92) / 171.3 min  |
+34677.4s 394 
+34677.4s 395 ## Table 4 (ablation)
+34677.4s 396 
+34677.4s 397 | Model    | Config           | Accuracy         | F1 macro         | F1 malignant     | CI95 acc         | mean AUC | no-det |
+34677.4s 398 |----------|------------------|------------------|------------------|------------------|------------------|----------|--------|
+34677.4s 399 | yolov10b | A: YOLO only     | 0.6667 (-0.1795) | 0.6619 (-0.1695) | 0.6984 (-0.0516) | [0.5812, 0.7521] | 0.8910   | 0      |
+34677.4s 400 | yolov10b | B: +Optuna       | 0.8803 (+0.0000) | 0.8638 (-0.0183) | 0.8364 (+0.0110) | [0.8205, 0.9316] | 0.9554   | 0      |
+34677.4s 401 | yolov10b | C: +MedSAM       | 0.6667 (-0.1880) | 0.6619 (-0.1790) | 0.6984 (-0.0735) | [0.5812, 0.7521] | 0.8816   | 0      |
+34677.4s 402 | yolov10b | D: full pipeline | 0.8803 (+0.0000) | 0.8638 (-0.0183) | 0.8364 (+0.0110) | [0.8205, 0.9316] | 0.9539   | 0      |
+34677.4s 403 | yolov10n | A: YOLO only     | 0.7094 (-0.1111) | 0.7010 (-0.1096) | 0.6667 (-0.1130) | [0.6323, 0.7863] | 0.8656   | 0      |
+34677.4s 404 | yolov10n | B: +Optuna       | 0.7265 (-0.1538) | 0.7142 (-0.1571) | 0.6562 (-0.1620) | [0.6496, 0.8034] | 0.8853   | 0      |
+34677.4s 405 | yolov10n | C: +MedSAM       | 0.7094 (-0.1111) | 0.7010 (-0.1096) | 0.6667 (-0.1130) | [0.6323, 0.7863] | 0.8620   | 0      |
+34677.4s 406 | yolov10n | D: full pipeline | 0.7265 (-0.1453) | 0.7142 (-0.1475) | 0.6562 (-0.1620) | [0.6496, 0.8034] | 0.8833   | 0      |
+34677.4s 407 | yolo11s  | A: YOLO only     | 0.8205 (-0.0171) | 0.8118 (-0.0046) | 0.7647 (-0.0150) | [0.7519, 0.8889] | 0.9236   | 0      |
+34677.4s 408 | yolo11s  | B: +Optuna       | 0.8205 (-0.0427) | 0.7891 (-0.0665) | 0.7636 (-0.0500) | [0.7521, 0.8889] | 0.9283   | 0      |
+34677.4s 409 | yolo11s  | C: +MedSAM       | 0.8205 (-0.0171) | 0.8097 (-0.0067) | 0.7647 (-0.0150) | [0.7521, 0.8889] | 0.9237   | 0      |
+34677.4s 410 | yolo11s  | D: full pipeline | 0.8205 (-0.0342) | 0.7891 (-0.0574) | 0.7636 (-0.0500) | [0.7521, 0.8889] | 0.9262   | 0      |
+34677.4s 411 
+34677.4s 412 ## Gates
+34677.4s 413 
+34677.4s 414 - Gate 2 yolov10n: Config C == Config A (identical, as in the paper)
+34677.4s 415 - Gate 2 yolo11s: Config C differs from A on 2 image(s): ['benign (199)', 'normal (27)']
+34677.4s 416 - Gate 3 yolov10b_B: acc 0.8803 = 103/117 vs paper 0.8803 = 103/117 -> PASS
+34677.4s 417 
+34677.4s 418 ## Leakage
+34677.4s 419 
+34677.4s 420 | Run                | acc all 117 | acc clean test | acc test w/ train twin | F1 all | F1 clean |
+34677.4s 421 |--------------------|-------------|----------------|------------------------|--------|----------|
+34677.4s 422 | yolo11l_B          | 0.8120      | 0.7703 (n=74)  | 0.8837 (n=43)          | 0.7888 | 0.7595   |
+34677.4s 423 | yolo11l_B +MedSAM  | 0.8120      | 0.7703 (n=74)  | 0.8837 (n=43)          | 0.7888 | 0.7595   |
+34677.4s 424 | yolo11m_B          | 0.8376      | 0.8108 (n=74)  | 0.8837 (n=43)          | 0.8116 | 0.7947   |
+34677.4s 425 | yolo11m_B +MedSAM  | 0.8376      | 0.8108 (n=74)  | 0.8837 (n=43)          | 0.8116 | 0.7947   |
+34677.4s 426 | yolo11n_B          | 0.7692      | 0.7838 (n=74)  | 0.7442 (n=43)          | 0.7409 | 0.7572   |
+34677.4s 427 | yolo11n_B +MedSAM  | 0.7778      | 0.7838 (n=74)  | 0.7674 (n=43)          | 0.7482 | 0.7572   |
+34677.4s 428 | yolo11s_A          | 0.8205      | 0.8514 (n=74)  | 0.7674 (n=43)          | 0.8118 | 0.8425   |
+34677.4s 429 | yolo11s_A +MedSAM  | 0.8205      | 0.8514 (n=74)  | 0.7674 (n=43)          | 0.8097 | 0.8425   |
+34677.4s 430 | yolo11s_B          | 0.8205      | 0.8243 (n=74)  | 0.8140 (n=43)          | 0.7891 | 0.8006   |
+34677.4s 431 | yolo11s_B +MedSAM  | 0.8205      | 0.8243 (n=74)  | 0.8140 (n=43)          | 0.7891 | 0.8006   |
+34677.4s 432 | yolo11x_B          | 0.8034      | 0.7703 (n=74)  | 0.8605 (n=43)          | 0.7830 | 0.7580   |
+34677.4s 433 | yolo11x_B +MedSAM  | 0.8034      | 0.7703 (n=74)  | 0.8605 (n=43)          | 0.7830 | 0.7580   |
+34677.4s 434 | yolov10b_A         | 0.6667      | 0.6892 (n=74)  | 0.6279 (n=43)          | 0.6619 | 0.6822   |
+34677.4s 435 | yolov10b_A +MedSAM | 0.6667      | 0.6892 (n=74)  | 0.6279 (n=43)          | 0.6619 | 0.6822   |
+34677.4s 436 | yolov10b_B         | 0.8803      | 0.8649 (n=74)  | 0.9070 (n=43)          | 0.8638 | 0.8546   |
+34677.4s 437 | yolov10b_B +MedSAM | 0.8803      | 0.8649 (n=74)  | 0.9070 (n=43)          | 0.8638 | 0.8546   |
+34677.4s 438 | yolov10l_B         | 0.8632      | 0.8243 (n=74)  | 0.9302 (n=43)          | 0.8417 | 0.8122   |
+34677.4s 439 | yolov10l_B +MedSAM | 0.8547      | 0.8243 (n=74)  | 0.9070 (n=43)          | 0.8297 | 0.8122   |
+34677.4s 440 | yolov10m_B         | 0.8291      | 0.7973 (n=74)  | 0.8837 (n=43)          | 0.7912 | 0.7664   |
+34677.4s 441 | yolov10m_B +MedSAM | 0.8205      | 0.7838 (n=74)  | 0.8837 (n=43)          | 0.7785 | 0.7489   |
+34677.4s 442 | yolov10n_A         | 0.7094      | 0.7027 (n=74)  | 0.7209 (n=43)          | 0.7010 | 0.7020   |
+34677.4s 443 | yolov10n_A +MedSAM | 0.7094      | 0.7027 (n=74)  | 0.7209 (n=43)          | 0.7010 | 0.7020   |
+34677.4s 444 | yolov10n_B         | 0.7265      | 0.7568 (n=74)  | 0.6744 (n=43)          | 0.7142 | 0.7526   |
+34677.4s 445 | yolov10n_B +MedSAM | 0.7265      | 0.7568 (n=74)  | 0.6744 (n=43)          | 0.7142 | 0.7526   |
+34677.4s 446 | yolov10s_B         | 0.8034      | 0.7973 (n=74)  | 0.8140 (n=43)          | 0.7715 | 0.7775   |
+34677.4s 447 | yolov10s_B +MedSAM | 0.8034      | 0.7973 (n=74)  | 0.8140 (n=43)          | 0.7715 | 0.7775   |
+34677.4s 448 | yolov10x_B         | 0.7863      | 0.7838 (n=74)  | 0.7907 (n=43)          | 0.7563 | 0.7636   |
+34677.4s 449 | yolov10x_B +MedSAM | 0.7949      | 0.7838 (n=74)  | 0.8140 (n=43)          | 0.7640 | 0.7636   |
+34677.4s 450 
+34677.4s 451 ## MedSAM section 4.3 (GT-box prompts) - fusion recipe: squash + ImageNet
+34677.4s 452 
+34677.4s 453 fixed a priori: MedSAM's training geometry (1024x1024 squash) with the normalisation the HF checkpoint ships with (ImageNet mean/std); not selected on the test set
+34677.4s 454 
+34677.4s 455 | class     | n  | Dice   | paper  | IoU true | paper  | IoU pred-head |
+34677.4s 456 |-----------|----|--------|--------|----------|--------|---------------|
+34677.4s 457 | benign    | 66 | 0.8813 | 0.9396 | 0.7959   | 0.8879 | 0.9586        |
+34677.4s 458 | malignant | 31 | 0.8443 | 0.9178 | 0.7410   | 0.8510 | 0.9724        |
+34677.4s 459 | overall   | 97 | 0.8695 | 0.9326 | 0.7783   | 0.8760 | 0.9630        |
+34677.4s 460 
+34677.4s 461 Preprocessing sensitivity (mean Dice / true IoU over the same images):
+34677.4s 462 
+34677.4s 463 | recipe                           | Dice   | IoU    |
+34677.4s 464 |----------------------------------|--------|--------|
+34677.4s 465 | official (squash + min-max)      | 0.7314 | 0.5996 |
+34677.4s 466 | HF SamProcessor (pad + ImageNet) | 0.7548 | 0.6392 |
+34677.4s 467 | squash + ImageNet                | 0.8695 | 0.7783 |
+34677.4s 468 | pad + min-max                    | 0.7184 | 0.5864 |
+34677.7s 469 
+34677.7s 470 output:
+34677.7s 471 results/  518 MB: dedup_report.csv, leaky_test_stems.json, manifest.csv, medsam_standalone.json, yolo11l_B, yolo11m_B, yolo11n_B, yolo11s_A, yolo11s_B, yolo11x_B, yolov10b_A, yolov10b_B, yolov10l_B, yolov10m_B, yolov10n_A, yolov10n_B, yolov10s_B, yolov10x_B
+34677.7s 472 report/  1 MB: all_metrics.json, fig_confusion_roc.png, fig_leakage_pairs.png, fig_table3_bars.png, report.md
+34681.6s 473 /usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+34681.6s 474 cells[i][c] = re.sub('\\\\\|', '|', cell)
+34681.8s 475 /usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+34681.8s 476 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+34682.4s 477 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+34682.8s 478 [NbConvertApp] Writing 1250929 bytes to __notebook__.ipynb
+34685.0s 479 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+34686.1s 480 [NbConvertApp] Support files will be in __results___files/
+34686.1s 481 [NbConvertApp] Making directory __results___files
+34686.1s 482 [NbConvertApp] Making directory __results___files
+34686.1s 483 [NbConvertApp] Making directory __results___files
+34686.1s 484 [NbConvertApp] Writing 716449 bytes to __results__.html

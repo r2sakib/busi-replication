@@ -1,0 +1,2130 @@
+{
+ "yolo11l_B": {
+  "yolo": {
+   "mode": "yolo",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.811965811965812,
+   "n_correct": 95,
+   "f1_macro": 0.788762785484097,
+   "confusion": [
+    [
+     53,
+     6,
+     7
+    ],
+    [
+     2,
+     23,
+     6
+    ],
+    [
+     1,
+     0,
+     19
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.9464285714285714,
+     "recall": 0.803030303030303,
+     "f1": 0.8688524590163934
+    },
+    "malignant": {
+     "precision": 0.7931034482758621,
+     "recall": 0.7419354838709677,
+     "f1": 0.7666666666666667
+    },
+    "normal": {
+     "precision": 0.59375,
+     "recall": 0.95,
+     "f1": 0.7307692307692308
+    }
+   },
+   "auc": {
+    "benign": 0.9368686868686869,
+    "malignant": 0.9156039009752438,
+    "normal": 0.9721649484536082
+   },
+   "acc_ci95": [
+    0.7435897435897436,
+    0.8888888888888888
+   ],
+   "f1_macro_ci95": [
+    0.7079541877950691,
+    0.8727359188380261
+   ]
+  },
+  "fusion": {
+   "mode": "fusion",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.811965811965812,
+   "n_correct": 95,
+   "f1_macro": 0.788762785484097,
+   "confusion": [
+    [
+     53,
+     6,
+     7
+    ],
+    [
+     2,
+     23,
+     6
+    ],
+    [
+     1,
+     0,
+     19
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.9464285714285714,
+     "recall": 0.803030303030303,
+     "f1": 0.8688524590163934
+    },
+    "malignant": {
+     "precision": 0.7931034482758621,
+     "recall": 0.7419354838709677,
+     "f1": 0.7666666666666667
+    },
+    "normal": {
+     "precision": 0.59375,
+     "recall": 0.95,
+     "f1": 0.7307692307692308
+    }
+   },
+   "auc": {
+    "benign": 0.9370172311348782,
+    "malignant": 0.9122280570142536,
+    "normal": 0.9608247422680413
+   },
+   "acc_ci95": [
+    0.7435897435897436,
+    0.8888888888888888
+   ],
+   "f1_macro_ci95": [
+    0.7079541877950691,
+    0.8727359188380261
+   ]
+  },
+  "train": {
+   "tag": "yolo11l_B",
+   "variant": "yolo11l",
+   "config": "B",
+   "seed": 42,
+   "hp": {
+    "epochs": 200,
+    "patience": 30,
+    "warmup_epochs": 3,
+    "cos_lr": false,
+    "cache": "ram",
+    "workers": 2,
+    "deterministic": true,
+    "fliplr": 0.5,
+    "flipud": 0.5,
+    "mosaic": 1.0,
+    "mixup": 0.1,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "degrees": 15.0,
+    "scale": 0.5,
+    "perspective": 0.0005,
+    "lr0": 0.008471,
+    "momentum": 0.707,
+    "weight_decay": 0.00019,
+    "optimizer": "SGD",
+    "imgsz": 640,
+    "batch": 16,
+    "seed": 42,
+    "device": 0
+   },
+   "train_min": 97.4,
+   "epochs_run": 131,
+   "best_epoch": 101,
+   "val_map50": 0.7727058598426675,
+   "val_map5095": 0.613408263910278,
+   "test_map50": 0.8080576585286988,
+   "test_map5095": 0.6245676191520054
+  }
+ },
+ "yolo11m_B": {
+  "yolo": {
+   "mode": "yolo",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.8376068376068376,
+   "n_correct": 98,
+   "f1_macro": 0.8115667530301677,
+   "confusion": [
+    [
+     58,
+     6,
+     2
+    ],
+    [
+     4,
+     24,
+     3
+    ],
+    [
+     2,
+     2,
+     16
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.90625,
+     "recall": 0.8787878787878788,
+     "f1": 0.8923076923076922
+    },
+    "malignant": {
+     "precision": 0.75,
+     "recall": 0.7741935483870968,
+     "f1": 0.7619047619047619
+    },
+    "normal": {
+     "precision": 0.7619047619047619,
+     "recall": 0.8,
+     "f1": 0.7804878048780488
+    }
+   },
+   "auc": {
+    "benign": 0.9183006535947712,
+    "malignant": 0.9463615903975994,
+    "normal": 0.9358247422680412
+   },
+   "acc_ci95": [
+    0.7692307692307693,
+    0.905982905982906
+   ],
+   "f1_macro_ci95": [
+    0.72287570849322,
+    0.8866520517211072
+   ]
+  },
+  "fusion": {
+   "mode": "fusion",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.8376068376068376,
+   "n_correct": 98,
+   "f1_macro": 0.8115667530301677,
+   "confusion": [
+    [
+     58,
+     6,
+     2
+    ],
+    [
+     4,
+     24,
+     3
+    ],
+    [
+     2,
+     2,
+     16
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.90625,
+     "recall": 0.8787878787878788,
+     "f1": 0.8923076923076922
+    },
+    "malignant": {
+     "precision": 0.75,
+     "recall": 0.7741935483870968,
+     "f1": 0.7619047619047619
+    },
+    "normal": {
+     "precision": 0.7619047619047619,
+     "recall": 0.8,
+     "f1": 0.7804878048780488
+    }
+   },
+   "auc": {
+    "benign": 0.916815210932858,
+    "malignant": 0.9463615903975994,
+    "normal": 0.9353092783505155
+   },
+   "acc_ci95": [
+    0.7692307692307693,
+    0.905982905982906
+   ],
+   "f1_macro_ci95": [
+    0.72287570849322,
+    0.8866520517211072
+   ]
+  },
+  "train": {
+   "tag": "yolo11m_B",
+   "variant": "yolo11m",
+   "config": "B",
+   "seed": 42,
+   "hp": {
+    "epochs": 200,
+    "patience": 30,
+    "warmup_epochs": 3,
+    "cos_lr": false,
+    "cache": "ram",
+    "workers": 2,
+    "deterministic": true,
+    "fliplr": 0.5,
+    "flipud": 0.5,
+    "mosaic": 1.0,
+    "mixup": 0.1,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "degrees": 15.0,
+    "scale": 0.5,
+    "perspective": 0.0005,
+    "lr0": 0.0001069,
+    "momentum": 0.7743,
+    "weight_decay": 5.016e-06,
+    "optimizer": "Adam",
+    "imgsz": 640,
+    "batch": 16,
+    "seed": 42,
+    "device": 0
+   },
+   "train_min": 81.5,
+   "epochs_run": 129,
+   "best_epoch": 99,
+   "val_map50": 0.7700744602788191,
+   "val_map5095": 0.5892399364268874,
+   "test_map50": 0.7720167177501511,
+   "test_map5095": 0.584489933255029
+  }
+ },
+ "yolo11n_B": {
+  "yolo": {
+   "mode": "yolo",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.7692307692307693,
+   "n_correct": 90,
+   "f1_macro": 0.7409039648622983,
+   "confusion": [
+    [
+     53,
+     3,
+     10
+    ],
+    [
+     6,
+     20,
+     5
+    ],
+    [
+     3,
+     0,
+     17
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.8548387096774194,
+     "recall": 0.803030303030303,
+     "f1": 0.828125
+    },
+    "malignant": {
+     "precision": 0.8695652173913043,
+     "recall": 0.6451612903225806,
+     "f1": 0.7407407407407407
+    },
+    "normal": {
+     "precision": 0.53125,
+     "recall": 0.85,
+     "f1": 0.6538461538461537
+    }
+   },
+   "auc": {
+    "benign": 0.9129530600118836,
+    "malignant": 0.9171042760690172,
+    "normal": 0.938659793814433
+   },
+   "acc_ci95": [
+    0.6923076923076923,
+    0.8461538461538461
+   ],
+   "f1_macro_ci95": [
+    0.6487039648660281,
+    0.8244460900174537
+   ]
+  },
+  "fusion": {
+   "mode": "fusion",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.7777777777777778,
+   "n_correct": 91,
+   "f1_macro": 0.7482055699109962,
+   "confusion": [
+    [
+     54,
+     3,
+     9
+    ],
+    [
+     6,
+     20,
+     5
+    ],
+    [
+     3,
+     0,
+     17
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.8571428571428571,
+     "recall": 0.8181818181818182,
+     "f1": 0.8372093023255814
+    },
+    "malignant": {
+     "precision": 0.8695652173913043,
+     "recall": 0.6451612903225806,
+     "f1": 0.7407407407407407
+    },
+    "normal": {
+     "precision": 0.5483870967741935,
+     "recall": 0.85,
+     "f1": 0.6666666666666665
+    }
+   },
+   "auc": {
+    "benign": 0.9132501485442662,
+    "malignant": 0.9186046511627907,
+    "normal": 0.9298969072164949
+   },
+   "acc_ci95": [
+    0.7008547008547008,
+    0.8547008547008547
+   ],
+   "f1_macro_ci95": [
+    0.6559165951905864,
+    0.8301092603256863
+   ]
+  },
+  "train": {
+   "tag": "yolo11n_B",
+   "variant": "yolo11n",
+   "config": "B",
+   "seed": 42,
+   "hp": {
+    "epochs": 200,
+    "patience": 30,
+    "warmup_epochs": 3,
+    "cos_lr": false,
+    "cache": "ram",
+    "workers": 2,
+    "deterministic": true,
+    "fliplr": 0.5,
+    "flipud": 0.5,
+    "mosaic": 1.0,
+    "mixup": 0.1,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "degrees": 15.0,
+    "scale": 0.5,
+    "perspective": 0.0005,
+    "lr0": 0.0003508,
+    "momentum": 0.8645,
+    "weight_decay": 2.089e-05,
+    "optimizer": "AdamW",
+    "imgsz": 512,
+    "batch": 4,
+    "seed": 42,
+    "device": 0
+   },
+   "train_min": 55.1,
+   "epochs_run": 149,
+   "best_epoch": 119,
+   "val_map50": 0.7055960560143122,
+   "val_map5095": 0.5332609108622833,
+   "test_map50": 0.7210499425007165,
+   "test_map5095": 0.5225804031781379
+  }
+ },
+ "yolo11s_A": {
+  "yolo": {
+   "mode": "yolo",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.8205128205128205,
+   "n_correct": 96,
+   "f1_macro": 0.8117822389760674,
+   "confusion": [
+    [
+     52,
+     11,
+     3
+    ],
+    [
+     2,
+     26,
+     3
+    ],
+    [
+     2,
+     0,
+     18
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.9285714285714286,
+     "recall": 0.7878787878787878,
+     "f1": 0.8524590163934426
+    },
+    "malignant": {
+     "precision": 0.7027027027027027,
+     "recall": 0.8387096774193549,
+     "f1": 0.7647058823529411
+    },
+    "normal": {
+     "precision": 0.75,
+     "recall": 0.9,
+     "f1": 0.8181818181818182
+    }
+   },
+   "auc": {
+    "benign": 0.8958704693998811,
+    "malignant": 0.904351087771943,
+    "normal": 0.9706185567010309
+   },
+   "acc_ci95": [
+    0.7519230769230769,
+    0.8888888888888888
+   ],
+   "f1_macro_ci95": [
+    0.729098790059232,
+    0.88433415211666
+   ]
+  },
+  "fusion": {
+   "mode": "fusion",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.8205128205128205,
+   "n_correct": 96,
+   "f1_macro": 0.8096894671847235,
+   "confusion": [
+    [
+     53,
+     11,
+     2
+    ],
+    [
+     2,
+     26,
+     3
+    ],
+    [
+     3,
+     0,
+     17
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.9137931034482759,
+     "recall": 0.803030303030303,
+     "f1": 0.8548387096774194
+    },
+    "malignant": {
+     "precision": 0.7027027027027027,
+     "recall": 0.8387096774193549,
+     "f1": 0.7647058823529411
+    },
+    "normal": {
+     "precision": 0.7727272727272727,
+     "recall": 0.85,
+     "f1": 0.8095238095238095
+    }
+   },
+   "auc": {
+    "benign": 0.8940879382055853,
+    "malignant": 0.9058514628657164,
+    "normal": 0.9711340206185567
+   },
+   "acc_ci95": [
+    0.7521367521367521,
+    0.8888888888888888
+   ],
+   "f1_macro_ci95": [
+    0.7268078262151629,
+    0.8806611925484807
+   ]
+  },
+  "train": {
+   "tag": "yolo11s_A",
+   "variant": "yolo11s",
+   "config": "A",
+   "seed": 42,
+   "hp": {
+    "epochs": 200,
+    "patience": 30,
+    "warmup_epochs": 3,
+    "cos_lr": false,
+    "cache": "ram",
+    "workers": 2,
+    "deterministic": true,
+    "fliplr": 0.5,
+    "flipud": 0.5,
+    "mosaic": 1.0,
+    "mixup": 0.1,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "degrees": 15.0,
+    "scale": 0.5,
+    "perspective": 0.0005,
+    "lr0": 0.01,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "optimizer": "SGD",
+    "imgsz": 640,
+    "batch": 16,
+    "seed": 42,
+    "device": 0
+   },
+   "train_min": 60.8,
+   "epochs_run": 200,
+   "best_epoch": 200,
+   "val_map50": 0.7612250474849217,
+   "val_map5095": 0.5859507129913903,
+   "test_map50": 0.807733839328291,
+   "test_map5095": 0.6458464750567926
+  }
+ },
+ "yolo11s_B": {
+  "yolo": {
+   "mode": "yolo",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.8205128205128205,
+   "n_correct": 96,
+   "f1_macro": 0.7891190979563073,
+   "confusion": [
+    [
+     57,
+     3,
+     6
+    ],
+    [
+     4,
+     21,
+     6
+    ],
+    [
+     2,
+     0,
+     18
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.9047619047619048,
+     "recall": 0.8636363636363636,
+     "f1": 0.8837209302325582
+    },
+    "malignant": {
+     "precision": 0.875,
+     "recall": 0.6774193548387096,
+     "f1": 0.7636363636363636
+    },
+    "normal": {
+     "precision": 0.6,
+     "recall": 0.9,
+     "f1": 0.7200000000000001
+    }
+   },
+   "auc": {
+    "benign": 0.9266191325014854,
+    "malignant": 0.9193548387096774,
+    "normal": 0.9389175257731959
+   },
+   "acc_ci95": [
+    0.7521367521367521,
+    0.8888888888888888
+   ],
+   "f1_macro_ci95": [
+    0.7045217510202365,
+    0.8675441598995376
+   ]
+  },
+  "fusion": {
+   "mode": "fusion",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.8205128205128205,
+   "n_correct": 96,
+   "f1_macro": 0.7891190979563073,
+   "confusion": [
+    [
+     57,
+     3,
+     6
+    ],
+    [
+     4,
+     21,
+     6
+    ],
+    [
+     2,
+     0,
+     18
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.9047619047619048,
+     "recall": 0.8636363636363636,
+     "f1": 0.8837209302325582
+    },
+    "malignant": {
+     "precision": 0.875,
+     "recall": 0.6774193548387096,
+     "f1": 0.7636363636363636
+    },
+    "normal": {
+     "precision": 0.6,
+     "recall": 0.9,
+     "f1": 0.7200000000000001
+    }
+   },
+   "auc": {
+    "benign": 0.9248366013071896,
+    "malignant": 0.9201050262565641,
+    "normal": 0.9337628865979382
+   },
+   "acc_ci95": [
+    0.7521367521367521,
+    0.8888888888888888
+   ],
+   "f1_macro_ci95": [
+    0.7045217510202365,
+    0.8675441598995376
+   ]
+  },
+  "train": {
+   "tag": "yolo11s_B",
+   "variant": "yolo11s",
+   "config": "B",
+   "seed": 42,
+   "hp": {
+    "epochs": 200,
+    "patience": 30,
+    "warmup_epochs": 3,
+    "cos_lr": false,
+    "cache": "ram",
+    "workers": 2,
+    "deterministic": true,
+    "fliplr": 0.5,
+    "flipud": 0.5,
+    "mosaic": 1.0,
+    "mixup": 0.1,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "degrees": 15.0,
+    "scale": 0.5,
+    "perspective": 0.0005,
+    "lr0": 0.0001352,
+    "momentum": 0.6451,
+    "weight_decay": 1.031e-05,
+    "optimizer": "Adam",
+    "imgsz": 512,
+    "batch": 16,
+    "seed": 42,
+    "device": 0
+   },
+   "train_min": 27.0,
+   "epochs_run": 101,
+   "best_epoch": 71,
+   "val_map50": 0.745097946605843,
+   "val_map5095": 0.5856224053298729,
+   "test_map50": 0.8074680676572275,
+   "test_map5095": 0.6055228097977838
+  }
+ },
+ "yolo11x_B": {
+  "yolo": {
+   "mode": "yolo",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.8034188034188035,
+   "n_correct": 94,
+   "f1_macro": 0.7830337218060223,
+   "confusion": [
+    [
+     52,
+     5,
+     9
+    ],
+    [
+     3,
+     23,
+     5
+    ],
+    [
+     1,
+     0,
+     19
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.9285714285714286,
+     "recall": 0.7878787878787878,
+     "f1": 0.8524590163934426
+    },
+    "malignant": {
+     "precision": 0.8214285714285714,
+     "recall": 0.7419354838709677,
+     "f1": 0.7796610169491526
+    },
+    "normal": {
+     "precision": 0.5757575757575758,
+     "recall": 0.95,
+     "f1": 0.7169811320754716
+    }
+   },
+   "auc": {
+    "benign": 0.9435531788472965,
+    "malignant": 0.8962865716429107,
+    "normal": 0.9731958762886598
+   },
+   "acc_ci95": [
+    0.7350427350427351,
+    0.8717948717948718
+   ],
+   "f1_macro_ci95": [
+    0.7008679552189804,
+    0.8602172101011447
+   ]
+  },
+  "fusion": {
+   "mode": "fusion",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.8034188034188035,
+   "n_correct": 94,
+   "f1_macro": 0.7830337218060223,
+   "confusion": [
+    [
+     52,
+     5,
+     9
+    ],
+    [
+     3,
+     23,
+     5
+    ],
+    [
+     1,
+     0,
+     19
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.9285714285714286,
+     "recall": 0.7878787878787878,
+     "f1": 0.8524590163934426
+    },
+    "malignant": {
+     "precision": 0.8214285714285714,
+     "recall": 0.7419354838709677,
+     "f1": 0.7796610169491526
+    },
+    "normal": {
+     "precision": 0.5757575757575758,
+     "recall": 0.95,
+     "f1": 0.7169811320754716
+    }
+   },
+   "auc": {
+    "benign": 0.9417706476530006,
+    "malignant": 0.8966616654163541,
+    "normal": 0.9628865979381444
+   },
+   "acc_ci95": [
+    0.7350427350427351,
+    0.8717948717948718
+   ],
+   "f1_macro_ci95": [
+    0.7008679552189804,
+    0.8602172101011447
+   ]
+  },
+  "train": {
+   "tag": "yolo11x_B",
+   "variant": "yolo11x",
+   "config": "B",
+   "seed": 42,
+   "hp": {
+    "epochs": 200,
+    "patience": 30,
+    "warmup_epochs": 3,
+    "cos_lr": false,
+    "cache": "ram",
+    "workers": 2,
+    "deterministic": true,
+    "fliplr": 0.5,
+    "flipud": 0.5,
+    "mosaic": 1.0,
+    "mixup": 0.1,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "degrees": 15.0,
+    "scale": 0.5,
+    "perspective": 0.0005,
+    "lr0": 0.002667,
+    "momentum": 0.8046,
+    "weight_decay": 0.000327,
+    "optimizer": "SGD",
+    "imgsz": 640,
+    "batch": 4,
+    "seed": 42,
+    "device": 0
+   },
+   "train_min": 171.3,
+   "epochs_run": 122,
+   "best_epoch": 92,
+   "val_map50": 0.7642030840334523,
+   "val_map5095": 0.5808738502101669,
+   "test_map50": 0.7847706345581594,
+   "test_map5095": 0.6217171199211201
+  }
+ },
+ "yolov10b_A": {
+  "yolo": {
+   "mode": "yolo",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.6666666666666666,
+   "n_correct": 78,
+   "f1_macro": 0.6618923729146459,
+   "confusion": [
+    [
+     36,
+     10,
+     20
+    ],
+    [
+     1,
+     22,
+     8
+    ],
+    [
+     0,
+     0,
+     20
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.972972972972973,
+     "recall": 0.5454545454545454,
+     "f1": 0.6990291262135921
+    },
+    "malignant": {
+     "precision": 0.6875,
+     "recall": 0.7096774193548387,
+     "f1": 0.6984126984126984
+    },
+    "normal": {
+     "precision": 0.4166666666666667,
+     "recall": 1.0,
+     "f1": 0.5882352941176471
+    }
+   },
+   "auc": {
+    "benign": 0.8404634581105169,
+    "malignant": 0.8499624906226556,
+    "normal": 0.9824742268041237
+   },
+   "acc_ci95": [
+    0.5811965811965812,
+    0.7521367521367521
+   ],
+   "f1_macro_ci95": [
+    0.5672280076814294,
+    0.7416583935511717
+   ]
+  },
+  "fusion": {
+   "mode": "fusion",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.6666666666666666,
+   "n_correct": 78,
+   "f1_macro": 0.6618923729146459,
+   "confusion": [
+    [
+     36,
+     10,
+     20
+    ],
+    [
+     1,
+     22,
+     8
+    ],
+    [
+     0,
+     0,
+     20
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.972972972972973,
+     "recall": 0.5454545454545454,
+     "f1": 0.6990291262135921
+    },
+    "malignant": {
+     "precision": 0.6875,
+     "recall": 0.7096774193548387,
+     "f1": 0.6984126984126984
+    },
+    "normal": {
+     "precision": 0.4166666666666667,
+     "recall": 1.0,
+     "f1": 0.5882352941176471
+    }
+   },
+   "auc": {
+    "benign": 0.8410576351752822,
+    "malignant": 0.8522130532633159,
+    "normal": 0.9515463917525773
+   },
+   "acc_ci95": [
+    0.5811965811965812,
+    0.7521367521367521
+   ],
+   "f1_macro_ci95": [
+    0.5672280076814294,
+    0.7416583935511717
+   ]
+  },
+  "train": {
+   "tag": "yolov10b_A",
+   "variant": "yolov10b",
+   "config": "A",
+   "seed": 42,
+   "hp": {
+    "epochs": 200,
+    "patience": 30,
+    "warmup_epochs": 3,
+    "cos_lr": false,
+    "cache": "ram",
+    "workers": 2,
+    "deterministic": true,
+    "fliplr": 0.5,
+    "flipud": 0.5,
+    "mosaic": 1.0,
+    "mixup": 0.1,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "degrees": 15.0,
+    "scale": 0.5,
+    "perspective": 0.0005,
+    "lr0": 0.01,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "optimizer": "SGD",
+    "imgsz": 640,
+    "batch": 16,
+    "seed": 42,
+    "device": 0
+   },
+   "train_min": 81.0,
+   "epochs_run": 107,
+   "best_epoch": 77,
+   "val_map50": 0.6001332527209365,
+   "val_map5095": 0.46538974887852214,
+   "test_map50": 0.6255956516717248,
+   "test_map5095": 0.4793046727129474
+  }
+ },
+ "yolov10b_B": {
+  "yolo": {
+   "mode": "yolo",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.8803418803418803,
+   "n_correct": 103,
+   "f1_macro": 0.8637519473340368,
+   "confusion": [
+    [
+     61,
+     1,
+     4
+    ],
+    [
+     6,
+     23,
+     2
+    ],
+    [
+     1,
+     0,
+     19
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.8970588235294118,
+     "recall": 0.9242424242424242,
+     "f1": 0.9104477611940298
+    },
+    "malignant": {
+     "precision": 0.9583333333333334,
+     "recall": 0.7419354838709677,
+     "f1": 0.8363636363636364
+    },
+    "normal": {
+     "precision": 0.76,
+     "recall": 0.95,
+     "f1": 0.8444444444444444
+    }
+   },
+   "auc": {
+    "benign": 0.9295900178253119,
+    "malignant": 0.9624906226556639,
+    "normal": 0.9742268041237113
+   },
+   "acc_ci95": [
+    0.8205128205128205,
+    0.9316239316239316
+   ],
+   "f1_macro_ci95": [
+    0.792033107869574,
+    0.9252245296458182
+   ]
+  },
+  "fusion": {
+   "mode": "fusion",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.8803418803418803,
+   "n_correct": 103,
+   "f1_macro": 0.8637519473340368,
+   "confusion": [
+    [
+     61,
+     1,
+     4
+    ],
+    [
+     6,
+     23,
+     2
+    ],
+    [
+     1,
+     0,
+     19
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.8970588235294118,
+     "recall": 0.9242424242424242,
+     "f1": 0.9104477611940298
+    },
+    "malignant": {
+     "precision": 0.9583333333333334,
+     "recall": 0.7419354838709677,
+     "f1": 0.8363636363636364
+    },
+    "normal": {
+     "precision": 0.76,
+     "recall": 0.95,
+     "f1": 0.8444444444444444
+    }
+   },
+   "auc": {
+    "benign": 0.9284016636957814,
+    "malignant": 0.9606151537884471,
+    "normal": 0.972680412371134
+   },
+   "acc_ci95": [
+    0.8205128205128205,
+    0.9316239316239316
+   ],
+   "f1_macro_ci95": [
+    0.792033107869574,
+    0.9252245296458182
+   ]
+  },
+  "train": {
+   "tag": "yolov10b_B",
+   "variant": "yolov10b",
+   "config": "B",
+   "seed": 42,
+   "hp": {
+    "epochs": 200,
+    "patience": 30,
+    "warmup_epochs": 3,
+    "cos_lr": false,
+    "cache": "ram",
+    "workers": 2,
+    "deterministic": true,
+    "fliplr": 0.5,
+    "flipud": 0.5,
+    "mosaic": 1.0,
+    "mixup": 0.1,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "degrees": 15.0,
+    "scale": 0.5,
+    "perspective": 0.0005,
+    "lr0": 7.372e-05,
+    "momentum": 0.6657,
+    "weight_decay": 0.000686,
+    "optimizer": "Adam",
+    "imgsz": 640,
+    "batch": 8,
+    "seed": 42,
+    "device": 0
+   },
+   "train_min": 122.6,
+   "epochs_run": 145,
+   "best_epoch": 115,
+   "val_map50": 0.749143132874173,
+   "val_map5095": 0.5791071367482999,
+   "test_map50": 0.8319386584407681,
+   "test_map5095": 0.6163659074123384
+  }
+ },
+ "yolov10l_B": {
+  "yolo": {
+   "mode": "yolo",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.8632478632478633,
+   "n_correct": 101,
+   "f1_macro": 0.8417481492251584,
+   "confusion": [
+    [
+     60,
+     5,
+     1
+    ],
+    [
+     4,
+     24,
+     3
+    ],
+    [
+     2,
+     1,
+     17
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.9090909090909091,
+     "recall": 0.9090909090909091,
+     "f1": 0.9090909090909091
+    },
+    "malignant": {
+     "precision": 0.8,
+     "recall": 0.7741935483870968,
+     "f1": 0.7868852459016393
+    },
+    "normal": {
+     "precision": 0.8095238095238095,
+     "recall": 0.85,
+     "f1": 0.8292682926829269
+    }
+   },
+   "auc": {
+    "benign": 0.942364824717766,
+    "malignant": 0.9216054013503376,
+    "normal": 0.9747422680412371
+   },
+   "acc_ci95": [
+    0.8034188034188035,
+    0.9230769230769231
+   ],
+   "f1_macro_ci95": [
+    0.7687709183451652,
+    0.913534383290944
+   ]
+  },
+  "fusion": {
+   "mode": "fusion",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.8547008547008547,
+   "n_correct": 100,
+   "f1_macro": 0.829713628333128,
+   "confusion": [
+    [
+     60,
+     5,
+     1
+    ],
+    [
+     4,
+     24,
+     3
+    ],
+    [
+     3,
+     1,
+     16
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.8955223880597015,
+     "recall": 0.9090909090909091,
+     "f1": 0.9022556390977443
+    },
+    "malignant": {
+     "precision": 0.8,
+     "recall": 0.7741935483870968,
+     "f1": 0.7868852459016393
+    },
+    "normal": {
+     "precision": 0.8,
+     "recall": 0.8,
+     "f1": 0.8000000000000002
+    }
+   },
+   "auc": {
+    "benign": 0.9414735591206179,
+    "malignant": 0.9193548387096774,
+    "normal": 0.9706185567010309
+   },
+   "acc_ci95": [
+    0.7948717948717948,
+    0.9145299145299145
+   ],
+   "f1_macro_ci95": [
+    0.7559790721392226,
+    0.90292938238188
+   ]
+  },
+  "train": {
+   "tag": "yolov10l_B",
+   "variant": "yolov10l",
+   "config": "B",
+   "seed": 42,
+   "hp": {
+    "epochs": 200,
+    "patience": 30,
+    "warmup_epochs": 3,
+    "cos_lr": false,
+    "cache": "ram",
+    "workers": 2,
+    "deterministic": true,
+    "fliplr": 0.5,
+    "flipud": 0.5,
+    "mosaic": 1.0,
+    "mixup": 0.1,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "degrees": 15.0,
+    "scale": 0.5,
+    "perspective": 0.0005,
+    "lr0": 6.751e-05,
+    "momentum": 0.6826,
+    "weight_decay": 0.000281,
+    "optimizer": "Adam",
+    "imgsz": 416,
+    "batch": 16,
+    "seed": 42,
+    "device": 0
+   },
+   "train_min": 78.7,
+   "epochs_run": 169,
+   "best_epoch": 139,
+   "val_map50": 0.8080401535490251,
+   "val_map5095": 0.63016768543227,
+   "test_map50": 0.8102650033158706,
+   "test_map5095": 0.6513537536820614
+  }
+ },
+ "yolov10m_B": {
+  "yolo": {
+   "mode": "yolo",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.8290598290598291,
+   "n_correct": 97,
+   "f1_macro": 0.7912378881901018,
+   "confusion": [
+    [
+     60,
+     0,
+     6
+    ],
+    [
+     5,
+     20,
+     6
+    ],
+    [
+     3,
+     0,
+     17
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.8823529411764706,
+     "recall": 0.9090909090909091,
+     "f1": 0.8955223880597014
+    },
+    "malignant": {
+     "precision": 1.0,
+     "recall": 0.6451612903225806,
+     "f1": 0.7843137254901961
+    },
+    "normal": {
+     "precision": 0.5862068965517241,
+     "recall": 0.85,
+     "f1": 0.6938775510204082
+    }
+   },
+   "auc": {
+    "benign": 0.9242424242424242,
+    "malignant": 0.9246061515378845,
+    "normal": 0.9265463917525774
+   },
+   "acc_ci95": [
+    0.7606837606837606,
+    0.8974358974358975
+   ],
+   "f1_macro_ci95": [
+    0.6999326946239577,
+    0.8715380391202221
+   ]
+  },
+  "fusion": {
+   "mode": "fusion",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.8205128205128205,
+   "n_correct": 96,
+   "f1_macro": 0.7785074626865671,
+   "confusion": [
+    [
+     60,
+     0,
+     6
+    ],
+    [
+     5,
+     19,
+     7
+    ],
+    [
+     3,
+     0,
+     17
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.8823529411764706,
+     "recall": 0.9090909090909091,
+     "f1": 0.8955223880597014
+    },
+    "malignant": {
+     "precision": 1.0,
+     "recall": 0.6129032258064516,
+     "f1": 0.76
+    },
+    "normal": {
+     "precision": 0.5666666666666667,
+     "recall": 0.85,
+     "f1": 0.68
+    }
+   },
+   "auc": {
+    "benign": 0.9221628045157457,
+    "malignant": 0.9249812453113279,
+    "normal": 0.9177835051546391
+   },
+   "acc_ci95": [
+    0.7521367521367521,
+    0.8888888888888888
+   ],
+   "f1_macro_ci95": [
+    0.6868226163605023,
+    0.8590527111943602
+   ]
+  },
+  "train": {
+   "tag": "yolov10m_B",
+   "variant": "yolov10m",
+   "config": "B",
+   "seed": 42,
+   "hp": {
+    "epochs": 200,
+    "patience": 30,
+    "warmup_epochs": 3,
+    "cos_lr": false,
+    "cache": "ram",
+    "workers": 2,
+    "deterministic": true,
+    "fliplr": 0.5,
+    "flipud": 0.5,
+    "mosaic": 1.0,
+    "mixup": 0.1,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "degrees": 15.0,
+    "scale": 0.5,
+    "perspective": 0.0005,
+    "lr0": 1.2e-05,
+    "momentum": 0.6515,
+    "weight_decay": 3.227e-05,
+    "optimizer": "AdamW",
+    "imgsz": 512,
+    "batch": 16,
+    "seed": 42,
+    "device": 0
+   },
+   "train_min": 71.0,
+   "epochs_run": 160,
+   "best_epoch": 130,
+   "val_map50": 0.758755848702395,
+   "val_map5095": 0.612020557573953,
+   "test_map50": 0.7851019124380109,
+   "test_map5095": 0.5941328724114399
+  }
+ },
+ "yolov10n_A": {
+  "yolo": {
+   "mode": "yolo",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.7094017094017094,
+   "n_correct": 83,
+   "f1_macro": 0.701010101010101,
+   "confusion": [
+    [
+     41,
+     15,
+     10
+    ],
+    [
+     2,
+     23,
+     6
+    ],
+    [
+     1,
+     0,
+     19
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.9318181818181818,
+     "recall": 0.6212121212121212,
+     "f1": 0.7454545454545454
+    },
+    "malignant": {
+     "precision": 0.6052631578947368,
+     "recall": 0.7419354838709677,
+     "f1": 0.6666666666666666
+    },
+    "normal": {
+     "precision": 0.5428571428571428,
+     "recall": 0.95,
+     "f1": 0.6909090909090908
+    }
+   },
+   "auc": {
+    "benign": 0.8101604278074866,
+    "malignant": 0.8552138034508627,
+    "normal": 0.9314432989690722
+   },
+   "acc_ci95": [
+    0.6322649572649572,
+    0.7863247863247863
+   ],
+   "f1_macro_ci95": [
+    0.6109158122322423,
+    0.7791846066351729
+   ]
+  },
+  "fusion": {
+   "mode": "fusion",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.7094017094017094,
+   "n_correct": 83,
+   "f1_macro": 0.701010101010101,
+   "confusion": [
+    [
+     41,
+     15,
+     10
+    ],
+    [
+     2,
+     23,
+     6
+    ],
+    [
+     1,
+     0,
+     19
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.9318181818181818,
+     "recall": 0.6212121212121212,
+     "f1": 0.7454545454545454
+    },
+    "malignant": {
+     "precision": 0.6052631578947368,
+     "recall": 0.7419354838709677,
+     "f1": 0.6666666666666666
+    },
+    "normal": {
+     "precision": 0.5428571428571428,
+     "recall": 0.95,
+     "f1": 0.6909090909090908
+    }
+   },
+   "auc": {
+    "benign": 0.8092691622103387,
+    "malignant": 0.8552138034508627,
+    "normal": 0.9216494845360824
+   },
+   "acc_ci95": [
+    0.6322649572649572,
+    0.7863247863247863
+   ],
+   "f1_macro_ci95": [
+    0.6109158122322423,
+    0.7791846066351729
+   ]
+  },
+  "train": {
+   "tag": "yolov10n_A",
+   "variant": "yolov10n",
+   "config": "A",
+   "seed": 42,
+   "hp": {
+    "epochs": 200,
+    "patience": 30,
+    "warmup_epochs": 3,
+    "cos_lr": false,
+    "cache": "ram",
+    "workers": 2,
+    "deterministic": true,
+    "fliplr": 0.5,
+    "flipud": 0.5,
+    "mosaic": 1.0,
+    "mixup": 0.1,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "degrees": 15.0,
+    "scale": 0.5,
+    "perspective": 0.0005,
+    "lr0": 0.01,
+    "momentum": 0.937,
+    "weight_decay": 0.0005,
+    "optimizer": "SGD",
+    "imgsz": 640,
+    "batch": 16,
+    "seed": 42,
+    "device": 0
+   },
+   "train_min": 38.4,
+   "epochs_run": 132,
+   "best_epoch": 102,
+   "val_map50": 0.6040694751977164,
+   "val_map5095": 0.4661313187965741,
+   "test_map50": 0.5480697169573222,
+   "test_map5095": 0.42402697303851006
+  }
+ },
+ "yolov10n_B": {
+  "yolo": {
+   "mode": "yolo",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.7264957264957265,
+   "n_correct": 85,
+   "f1_macro": 0.7141539671020802,
+   "confusion": [
+    [
+     45,
+     12,
+     9
+    ],
+    [
+     5,
+     21,
+     5
+    ],
+    [
+     1,
+     0,
+     19
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.8823529411764706,
+     "recall": 0.6818181818181818,
+     "f1": 0.7692307692307693
+    },
+    "malignant": {
+     "precision": 0.6363636363636364,
+     "recall": 0.6774193548387096,
+     "f1": 0.65625
+    },
+    "normal": {
+     "precision": 0.5757575757575758,
+     "recall": 0.95,
+     "f1": 0.7169811320754716
+    }
+   },
+   "auc": {
+    "benign": 0.8464052287581699,
+    "malignant": 0.8454613653413353,
+    "normal": 0.9639175257731959
+   },
+   "acc_ci95": [
+    0.6495726495726496,
+    0.8034188034188035
+   ],
+   "f1_macro_ci95": [
+    0.631097698710569,
+    0.7928803679150616
+   ]
+  },
+  "fusion": {
+   "mode": "fusion",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.7264957264957265,
+   "n_correct": 85,
+   "f1_macro": 0.7141539671020802,
+   "confusion": [
+    [
+     45,
+     12,
+     9
+    ],
+    [
+     5,
+     21,
+     5
+    ],
+    [
+     1,
+     0,
+     19
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.8823529411764706,
+     "recall": 0.6818181818181818,
+     "f1": 0.7692307692307693
+    },
+    "malignant": {
+     "precision": 0.6363636363636364,
+     "recall": 0.6774193548387096,
+     "f1": 0.65625
+    },
+    "normal": {
+     "precision": 0.5757575757575758,
+     "recall": 0.95,
+     "f1": 0.7169811320754716
+    }
+   },
+   "auc": {
+    "benign": 0.8458110516934046,
+    "malignant": 0.8417104276069017,
+    "normal": 0.9623711340206186
+   },
+   "acc_ci95": [
+    0.6495726495726496,
+    0.8034188034188035
+   ],
+   "f1_macro_ci95": [
+    0.631097698710569,
+    0.7928803679150616
+   ]
+  },
+  "train": {
+   "tag": "yolov10n_B",
+   "variant": "yolov10n",
+   "config": "B",
+   "seed": 42,
+   "hp": {
+    "epochs": 200,
+    "patience": 30,
+    "warmup_epochs": 3,
+    "cos_lr": false,
+    "cache": "ram",
+    "workers": 2,
+    "deterministic": true,
+    "fliplr": 0.5,
+    "flipud": 0.5,
+    "mosaic": 1.0,
+    "mixup": 0.1,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "degrees": 15.0,
+    "scale": 0.5,
+    "perspective": 0.0005,
+    "lr0": 0.0008165,
+    "momentum": 0.7214,
+    "weight_decay": 0.007325,
+    "optimizer": "AdamW",
+    "imgsz": 640,
+    "batch": 8,
+    "seed": 42,
+    "device": 0
+   },
+   "train_min": 30.5,
+   "epochs_run": 85,
+   "best_epoch": 55,
+   "val_map50": 0.5793898836494825,
+   "val_map5095": 0.4488424371016373,
+   "test_map50": 0.5938103839100589,
+   "test_map5095": 0.43641502062942555
+  }
+ },
+ "yolov10s_B": {
+  "yolo": {
+   "mode": "yolo",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.8034188034188035,
+   "n_correct": 94,
+   "f1_macro": 0.771538918597742,
+   "confusion": [
+    [
+     57,
+     1,
+     8
+    ],
+    [
+     7,
+     19,
+     5
+    ],
+    [
+     2,
+     0,
+     18
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.8636363636363636,
+     "recall": 0.8636363636363636,
+     "f1": 0.8636363636363636
+    },
+    "malignant": {
+     "precision": 0.95,
+     "recall": 0.6129032258064516,
+     "f1": 0.7450980392156863
+    },
+    "normal": {
+     "precision": 0.5806451612903226,
+     "recall": 0.9,
+     "f1": 0.7058823529411764
+    }
+   },
+   "auc": {
+    "benign": 0.8648247177658942,
+    "malignant": 0.9262940735183796,
+    "normal": 0.954639175257732
+   },
+   "acc_ci95": [
+    0.7350427350427351,
+    0.8632478632478633
+   ],
+   "f1_macro_ci95": [
+    0.680746312706704,
+    0.8443798316174996
+   ]
+  },
+  "fusion": {
+   "mode": "fusion",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.8034188034188035,
+   "n_correct": 94,
+   "f1_macro": 0.771538918597742,
+   "confusion": [
+    [
+     57,
+     1,
+     8
+    ],
+    [
+     7,
+     19,
+     5
+    ],
+    [
+     2,
+     0,
+     18
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.8636363636363636,
+     "recall": 0.8636363636363636,
+     "f1": 0.8636363636363636
+    },
+    "malignant": {
+     "precision": 0.95,
+     "recall": 0.6129032258064516,
+     "f1": 0.7450980392156863
+    },
+    "normal": {
+     "precision": 0.5806451612903226,
+     "recall": 0.9,
+     "f1": 0.7058823529411764
+    }
+   },
+   "auc": {
+    "benign": 0.8621509209744503,
+    "malignant": 0.9266691672918229,
+    "normal": 0.9536082474226805
+   },
+   "acc_ci95": [
+    0.7350427350427351,
+    0.8632478632478633
+   ],
+   "f1_macro_ci95": [
+    0.680746312706704,
+    0.8443798316174996
+   ]
+  },
+  "train": {
+   "tag": "yolov10s_B",
+   "variant": "yolov10s",
+   "config": "B",
+   "seed": 42,
+   "hp": {
+    "epochs": 200,
+    "patience": 30,
+    "warmup_epochs": 3,
+    "cos_lr": false,
+    "cache": "ram",
+    "workers": 2,
+    "deterministic": true,
+    "fliplr": 0.5,
+    "flipud": 0.5,
+    "mosaic": 1.0,
+    "mixup": 0.1,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "degrees": 15.0,
+    "scale": 0.5,
+    "perspective": 0.0005,
+    "lr0": 0.004844,
+    "momentum": 0.6548,
+    "weight_decay": 0.00144,
+    "optimizer": "SGD",
+    "imgsz": 640,
+    "batch": 8,
+    "seed": 42,
+    "device": 0
+   },
+   "train_min": 33.6,
+   "epochs_run": 76,
+   "best_epoch": 46,
+   "val_map50": 0.7162643481625857,
+   "val_map5095": 0.5357753448566549,
+   "test_map50": 0.7565508237999142,
+   "test_map5095": 0.561933976199452
+  }
+ },
+ "yolov10x_B": {
+  "yolo": {
+   "mode": "yolo",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.7863247863247863,
+   "n_correct": 92,
+   "f1_macro": 0.7563391103901648,
+   "confusion": [
+    [
+     55,
+     3,
+     8
+    ],
+    [
+     7,
+     19,
+     5
+    ],
+    [
+     2,
+     0,
+     18
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.859375,
+     "recall": 0.8333333333333334,
+     "f1": 0.8461538461538461
+    },
+    "malignant": {
+     "precision": 0.8636363636363636,
+     "recall": 0.6129032258064516,
+     "f1": 0.7169811320754716
+    },
+    "normal": {
+     "precision": 0.5806451612903226,
+     "recall": 0.9,
+     "f1": 0.7058823529411764
+    }
+   },
+   "auc": {
+    "benign": 0.8891859774212716,
+    "malignant": 0.9210427606901725,
+    "normal": 0.9680412371134021
+   },
+   "acc_ci95": [
+    0.7094017094017094,
+    0.8547008547008547
+   ],
+   "f1_macro_ci95": [
+    0.6630977600216107,
+    0.8329791955934429
+   ]
+  },
+  "fusion": {
+   "mode": "fusion",
+   "n": 117,
+   "n_no_detection": 0,
+   "accuracy": 0.7948717948717948,
+   "n_correct": 93,
+   "f1_macro": 0.7639809880455135,
+   "confusion": [
+    [
+     56,
+     3,
+     7
+    ],
+    [
+     7,
+     19,
+     5
+    ],
+    [
+     2,
+     0,
+     18
+    ]
+   ],
+   "per_class": {
+    "benign": {
+     "precision": 0.8615384615384616,
+     "recall": 0.8484848484848485,
+     "f1": 0.8549618320610687
+    },
+    "malignant": {
+     "precision": 0.8636363636363636,
+     "recall": 0.6129032258064516,
+     "f1": 0.7169811320754716
+    },
+    "normal": {
+     "precision": 0.6,
+     "recall": 0.9,
+     "f1": 0.7200000000000001
+    }
+   },
+   "auc": {
+    "benign": 0.8897801544860369,
+    "malignant": 0.9212303075768942,
+    "normal": 0.9685567010309278
+   },
+   "acc_ci95": [
+    0.717948717948718,
+    0.8632478632478633
+   ],
+   "f1_macro_ci95": [
+    0.6691292749925113,
+    0.8389051329733465
+   ]
+  },
+  "train": {
+   "tag": "yolov10x_B",
+   "variant": "yolov10x",
+   "config": "B",
+   "seed": 42,
+   "hp": {
+    "epochs": 200,
+    "patience": 30,
+    "warmup_epochs": 3,
+    "cos_lr": false,
+    "cache": "ram",
+    "workers": 2,
+    "deterministic": true,
+    "fliplr": 0.5,
+    "flipud": 0.5,
+    "mosaic": 1.0,
+    "mixup": 0.1,
+    "hsv_h": 0.015,
+    "hsv_s": 0.7,
+    "hsv_v": 0.4,
+    "degrees": 15.0,
+    "scale": 0.5,
+    "perspective": 0.0005,
+    "lr0": 0.0002178,
+    "momentum": 0.6555,
+    "weight_decay": 0.000694,
+    "optimizer": "AdamW",
+    "imgsz": 512,
+    "batch": 4,
+    "seed": 42,
+    "device": 0
+   },
+   "train_min": 151.3,
+   "epochs_run": 151,
+   "best_epoch": 121,
+   "val_map50": 0.73565589614637,
+   "val_map5095": 0.5540048048966261,
+   "test_map50": 0.7886360033176096,
+   "test_map5095": 0.5643993135755297
+  }
+ }
+}

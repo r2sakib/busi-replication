@@ -1,0 +1,720 @@
+{
+  "per_image": [
+    {
+      "stem": "benign (101)",
+      "cls": "benign",
+      "dice": 0.956656346749112,
+      "iou_true": 0.9169139465873277,
+      "iou_pred_head": 0.9468995332717896
+    },
+    {
+      "stem": "benign (11)",
+      "cls": "benign",
+      "dice": 0.8921363952677123,
+      "iou_true": 0.8052763819092105,
+      "iou_pred_head": 0.9401558637619019
+    },
+    {
+      "stem": "benign (110)",
+      "cls": "benign",
+      "dice": 0.929376704433623,
+      "iou_true": 0.8680706914208959,
+      "iou_pred_head": 0.9705812335014343
+    },
+    {
+      "stem": "benign (112)",
+      "cls": "benign",
+      "dice": 0.9161152614726876,
+      "iou_true": 0.8452146514374074,
+      "iou_pred_head": 0.9481989145278931
+    },
+    {
+      "stem": "benign (113)",
+      "cls": "benign",
+      "dice": 0.9571036605768375,
+      "iou_true": 0.9177361396303508,
+      "iou_pred_head": 0.9763939380645752
+    },
+    {
+      "stem": "benign (119)",
+      "cls": "benign",
+      "dice": 0.535810523329948,
+      "iou_true": 0.36594343277792213,
+      "iou_pred_head": 0.9136936664581299
+    },
+    {
+      "stem": "benign (135)",
+      "cls": "benign",
+      "dice": 0.8553575087071883,
+      "iou_true": 0.7472704492571374,
+      "iou_pred_head": 0.9262300133705139
+    },
+    {
+      "stem": "benign (139)",
+      "cls": "benign",
+      "dice": 0.9563832866929964,
+      "iou_true": 0.9164123901987132,
+      "iou_pred_head": 0.9697755575180054
+    },
+    {
+      "stem": "benign (141)",
+      "cls": "benign",
+      "dice": 0.5817016293069766,
+      "iou_true": 0.41014051861509193,
+      "iou_pred_head": 0.9641822576522827
+    },
+    {
+      "stem": "benign (143)",
+      "cls": "benign",
+      "dice": 0.8995463383017176,
+      "iou_true": 0.8174322732621806,
+      "iou_pred_head": 0.9548075795173645
+    },
+    {
+      "stem": "benign (146)",
+      "cls": "benign",
+      "dice": 0.805555555555236,
+      "iou_true": 0.6744186046507147,
+      "iou_pred_head": 0.9436295032501221
+    },
+    {
+      "stem": "benign (150)",
+      "cls": "benign",
+      "dice": 0.9376531445682174,
+      "iou_true": 0.8826242952327613,
+      "iou_pred_head": 0.9199732542037964
+    },
+    {
+      "stem": "benign (156)",
+      "cls": "benign",
+      "dice": 0.9325218311722184,
+      "iou_true": 0.8735746157659025,
+      "iou_pred_head": 0.946973443031311
+    },
+    {
+      "stem": "benign (163)",
+      "cls": "benign",
+      "dice": 0.8888359347073884,
+      "iou_true": 0.7999142183142183,
+      "iou_pred_head": 0.934342235326767
+    },
+    {
+      "stem": "benign (170)",
+      "cls": "benign",
+      "dice": 0.9526295585412302,
+      "iou_true": 0.9095440551238154,
+      "iou_pred_head": 0.9712308049201965
+    },
+    {
+      "stem": "benign (172)",
+      "cls": "benign",
+      "dice": 0.8840689048157372,
+      "iou_true": 0.7922253521125867,
+      "iou_pred_head": 0.9588407278060913
+    },
+    {
+      "stem": "benign (190)",
+      "cls": "benign",
+      "dice": 0.9616803676613218,
+      "iou_true": 0.9261891403278808,
+      "iou_pred_head": 0.9450351595878601
+    },
+    {
+      "stem": "benign (199)",
+      "cls": "benign",
+      "dice": 0.8417628690385971,
+      "iou_true": 0.7267621167868156,
+      "iou_pred_head": 0.9688195586204529
+    },
+    {
+      "stem": "benign (2)",
+      "cls": "benign",
+      "dice": 0.9403573163490613,
+      "iou_true": 0.8874286878564702,
+      "iou_pred_head": 0.9754669070243835
+    },
+    {
+      "stem": "benign (20)",
+      "cls": "benign",
+      "dice": 0.9424564796904462,
+      "iou_true": 0.891175125742891,
+      "iou_pred_head": 0.9756554365158081
+    },
+    {
+      "stem": "benign (201)",
+      "cls": "benign",
+      "dice": 0.6937762504772151,
+      "iou_true": 0.5311312481729712,
+      "iou_pred_head": 0.9084927439689636
+    },
+    {
+      "stem": "benign (206)",
+      "cls": "benign",
+      "dice": 0.7730076486552853,
+      "iou_true": 0.6300020108585944,
+      "iou_pred_head": 0.9592238664627075
+    },
+    {
+      "stem": "benign (211)",
+      "cls": "benign",
+      "dice": 0.6230129794369808,
+      "iou_true": 0.4524465155686396,
+      "iou_pred_head": 0.9395700693130493
+    },
+    {
+      "stem": "benign (220)",
+      "cls": "benign",
+      "dice": 0.6885857130751047,
+      "iou_true": 0.5250710777978127,
+      "iou_pred_head": 0.882405161857605
+    },
+    {
+      "stem": "benign (225)",
+      "cls": "benign",
+      "dice": 0.6458700973415696,
+      "iou_true": 0.4769631747098977,
+      "iou_pred_head": 0.9294719696044922
+    },
+    {
+      "stem": "benign (227)",
+      "cls": "benign",
+      "dice": 0.6582854880221086,
+      "iou_true": 0.49063007230330663,
+      "iou_pred_head": 0.8336377739906311
+    },
+    {
+      "stem": "benign (234)",
+      "cls": "benign",
+      "dice": 0.8146511668682901,
+      "iou_true": 0.6872670256197655,
+      "iou_pred_head": 0.9102259874343872
+    },
+    {
+      "stem": "benign (254)",
+      "cls": "benign",
+      "dice": 0.9122632103684386,
+      "iou_true": 0.8386801099900654,
+      "iou_pred_head": 0.9367347955703735
+    },
+    {
+      "stem": "benign (256)",
+      "cls": "benign",
+      "dice": 0.6371416509958692,
+      "iou_true": 0.4675039423293271,
+      "iou_pred_head": 0.9553372859954834
+    },
+    {
+      "stem": "benign (258)",
+      "cls": "benign",
+      "dice": 0.908480268681671,
+      "iou_true": 0.8323076923075093,
+      "iou_pred_head": 0.9548410773277283
+    },
+    {
+      "stem": "benign (264)",
+      "cls": "benign",
+      "dice": 0.9333246516473195,
+      "iou_true": 0.8749847393480115,
+      "iou_pred_head": 0.9766104221343994
+    },
+    {
+      "stem": "benign (266)",
+      "cls": "benign",
+      "dice": 0.9287116647484308,
+      "iou_true": 0.8669110212334596,
+      "iou_pred_head": 0.9228458404541016
+    },
+    {
+      "stem": "benign (273)",
+      "cls": "benign",
+      "dice": 0.8451181232446546,
+      "iou_true": 0.7317788427150872,
+      "iou_pred_head": 0.9251046776771545
+    },
+    {
+      "stem": "benign (274)",
+      "cls": "benign",
+      "dice": 0.9004850843814317,
+      "iou_true": 0.8189839642828622,
+      "iou_pred_head": 0.9835996627807617
+    },
+    {
+      "stem": "benign (292)",
+      "cls": "benign",
+      "dice": 0.7123239124656053,
+      "iou_true": 0.553185633686452,
+      "iou_pred_head": 0.9573003053665161
+    },
+    {
+      "stem": "benign (294)",
+      "cls": "benign",
+      "dice": 0.8518999675218881,
+      "iou_true": 0.7420084865628895,
+      "iou_pred_head": 0.9649513959884644
+    },
+    {
+      "stem": "benign (305)",
+      "cls": "benign",
+      "dice": 0.9090683229812535,
+      "iou_true": 0.8332953769071205,
+      "iou_pred_head": 0.9446542263031006
+    },
+    {
+      "stem": "benign (310)",
+      "cls": "benign",
+      "dice": 0.7869315383352229,
+      "iou_true": 0.6487115634473447,
+      "iou_pred_head": 0.964020848274231
+    },
+    {
+      "stem": "benign (331)",
+      "cls": "benign",
+      "dice": 0.8745519713260902,
+      "iou_true": 0.7770700636941497,
+      "iou_pred_head": 0.90384840965271
+    },
+    {
+      "stem": "benign (346)",
+      "cls": "benign",
+      "dice": 0.95668303619087,
+      "iou_true": 0.916962983806991,
+      "iou_pred_head": 0.9735104441642761
+    },
+    {
+      "stem": "benign (350)",
+      "cls": "benign",
+      "dice": 0.9144860020408987,
+      "iou_true": 0.8424451492659183,
+      "iou_pred_head": 0.9690251350402832
+    },
+    {
+      "stem": "benign (353)",
+      "cls": "benign",
+      "dice": 0.8054025701546281,
+      "iou_true": 0.6742041712402471,
+      "iou_pred_head": 0.9333969950675964
+    },
+    {
+      "stem": "benign (358)",
+      "cls": "benign",
+      "dice": 0.9359355855066981,
+      "iou_true": 0.8795854581344892,
+      "iou_pred_head": 0.9759255647659302
+    },
+    {
+      "stem": "benign (370)",
+      "cls": "benign",
+      "dice": 0.8825428916406806,
+      "iou_true": 0.789777867122304,
+      "iou_pred_head": 0.9858473539352417
+    },
+    {
+      "stem": "benign (371)",
+      "cls": "benign",
+      "dice": 0.8163110790483004,
+      "iou_true": 0.6896331160994364,
+      "iou_pred_head": 0.9600040912628174
+    },
+    {
+      "stem": "benign (377)",
+      "cls": "benign",
+      "dice": 0.7864519853742519,
+      "iou_true": 0.648060048630865,
+      "iou_pred_head": 0.9346102476119995
+    },
+    {
+      "stem": "benign (378)",
+      "cls": "benign",
+      "dice": 0.9460410167916011,
+      "iou_true": 0.8976070528966124,
+      "iou_pred_head": 0.9491599202156067
+    },
+    {
+      "stem": "benign (384)",
+      "cls": "benign",
+      "dice": 0.6776280439314661,
+      "iou_true": 0.5124337678379706,
+      "iou_pred_head": 0.9576879739761353
+    },
+    {
+      "stem": "benign (389)",
+      "cls": "benign",
+      "dice": 0.8325980392156522,
+      "iou_true": 0.7132059626285455,
+      "iou_pred_head": 0.9718084335327148
+    },
+    {
+      "stem": "benign (394)",
+      "cls": "benign",
+      "dice": 0.68873023286844,
+      "iou_true": 0.5252391614084546,
+      "iou_pred_head": 0.9209878444671631
+    },
+    {
+      "stem": "benign (399)",
+      "cls": "benign",
+      "dice": 0.9067465093885275,
+      "iou_true": 0.8294018881946319,
+      "iou_pred_head": 1.002968668937683
+    },
+    {
+      "stem": "benign (410)",
+      "cls": "benign",
+      "dice": 0.6802373275845494,
+      "iou_true": 0.515423978721544,
+      "iou_pred_head": 0.9854028224945068
+    },
+    {
+      "stem": "benign (420)",
+      "cls": "benign",
+      "dice": 0.8442365383637479,
+      "iou_true": 0.7304578889944615,
+      "iou_pred_head": 0.957912802696228
+    },
+    {
+      "stem": "benign (422)",
+      "cls": "benign",
+      "dice": 0.8111206159110281,
+      "iou_true": 0.6822564397754974,
+      "iou_pred_head": 0.9280771017074585
+    },
+    {
+      "stem": "benign (429)",
+      "cls": "benign",
+      "dice": 0.8843446195104115,
+      "iou_true": 0.792668269230531,
+      "iou_pred_head": 0.9424221515655518
+    },
+    {
+      "stem": "benign (435)",
+      "cls": "benign",
+      "dice": 0.9375423384363991,
+      "iou_true": 0.8824279520528227,
+      "iou_pred_head": 0.952824592590332
+    },
+    {
+      "stem": "benign (45)",
+      "cls": "benign",
+      "dice": 0.9719820131442248,
+      "iou_true": 0.9454912516823385,
+      "iou_pred_head": 0.9939149022102356
+    },
+    {
+      "stem": "benign (47)",
+      "cls": "benign",
+      "dice": 0.843835616438146,
+      "iou_true": 0.7298578199048988,
+      "iou_pred_head": 0.9554058313369751
+    },
+    {
+      "stem": "benign (55)",
+      "cls": "benign",
+      "dice": 0.9675801948606365,
+      "iou_true": 0.9371964679910665,
+      "iou_pred_head": 0.9295569062232971
+    },
+    {
+      "stem": "benign (57)",
+      "cls": "benign",
+      "dice": 0.9348247576434101,
+      "iou_true": 0.8776253150375588,
+      "iou_pred_head": 0.9441527128219604
+    },
+    {
+      "stem": "benign (68)",
+      "cls": "benign",
+      "dice": 0.9153035407449439,
+      "iou_true": 0.8438338052412862,
+      "iou_pred_head": 0.9375399947166443
+    },
+    {
+      "stem": "benign (82)",
+      "cls": "benign",
+      "dice": 0.9196119968781016,
+      "iou_true": 0.8511867905056174,
+      "iou_pred_head": 0.9883476495742798
+    },
+    {
+      "stem": "benign (85)",
+      "cls": "benign",
+      "dice": 0.654642874228564,
+      "iou_true": 0.4865941255956018,
+      "iou_pred_head": 0.9691392779350281
+    },
+    {
+      "stem": "benign (88)",
+      "cls": "benign",
+      "dice": 0.6188866903640299,
+      "iou_true": 0.44810710753859456,
+      "iou_pred_head": 0.9396265149116516
+    },
+    {
+      "stem": "benign (90)",
+      "cls": "benign",
+      "dice": 0.8762939080263233,
+      "iou_true": 0.7798248263362187,
+      "iou_pred_head": 0.9382990598678589
+    },
+    {
+      "stem": "benign (96)",
+      "cls": "benign",
+      "dice": 0.9444721930383481,
+      "iou_true": 0.8947866525250732,
+      "iou_pred_head": 0.9815791249275208
+    },
+    {
+      "stem": "malignant (104)",
+      "cls": "malignant",
+      "dice": 0.8787698474836274,
+      "iou_true": 0.7837550974805731,
+      "iou_pred_head": 0.9987812042236328
+    },
+    {
+      "stem": "malignant (108)",
+      "cls": "malignant",
+      "dice": 0.8050772548880858,
+      "iou_true": 0.6737483725884588,
+      "iou_pred_head": 0.9764404296875
+    },
+    {
+      "stem": "malignant (122)",
+      "cls": "malignant",
+      "dice": 0.8789114487399159,
+      "iou_true": 0.783980398115773,
+      "iou_pred_head": 0.9643545746803284
+    },
+    {
+      "stem": "malignant (123)",
+      "cls": "malignant",
+      "dice": 0.7971028793589865,
+      "iou_true": 0.6626525790785975,
+      "iou_pred_head": 0.9932048320770264
+    },
+    {
+      "stem": "malignant (134)",
+      "cls": "malignant",
+      "dice": 0.7788102024950662,
+      "iou_true": 0.6377470595367626,
+      "iou_pred_head": 0.9375457167625427
+    },
+    {
+      "stem": "malignant (135)",
+      "cls": "malignant",
+      "dice": 0.8927568944063302,
+      "iou_true": 0.8062880589603323,
+      "iou_pred_head": 0.9916368126869202
+    },
+    {
+      "stem": "malignant (136)",
+      "cls": "malignant",
+      "dice": 0.7423558897242177,
+      "iou_true": 0.5902750099640115,
+      "iou_pred_head": 0.96729576587677
+    },
+    {
+      "stem": "malignant (14)",
+      "cls": "malignant",
+      "dice": 0.7982604940936743,
+      "iou_true": 0.664254183348698,
+      "iou_pred_head": 0.9931129217147827
+    },
+    {
+      "stem": "malignant (147)",
+      "cls": "malignant",
+      "dice": 0.801568702472581,
+      "iou_true": 0.6688482720088859,
+      "iou_pred_head": 0.9312705993652344
+    },
+    {
+      "stem": "malignant (153)",
+      "cls": "malignant",
+      "dice": 0.8692760678391926,
+      "iou_true": 0.7687783402426185,
+      "iou_pred_head": 0.9126945734024048
+    },
+    {
+      "stem": "malignant (156)",
+      "cls": "malignant",
+      "dice": 0.9267332742179417,
+      "iou_true": 0.8634696780920493,
+      "iou_pred_head": 0.9764653444290161
+    },
+    {
+      "stem": "malignant (160)",
+      "cls": "malignant",
+      "dice": 0.7837143055651993,
+      "iou_true": 0.6443505083971127,
+      "iou_pred_head": 0.930099368095398
+    },
+    {
+      "stem": "malignant (17)",
+      "cls": "malignant",
+      "dice": 0.9453958369370791,
+      "iou_true": 0.8964461454346393,
+      "iou_pred_head": 0.9983874559402466
+    },
+    {
+      "stem": "malignant (176)",
+      "cls": "malignant",
+      "dice": 0.8564621343389963,
+      "iou_true": 0.7489582636985372,
+      "iou_pred_head": 0.9903782606124878
+    },
+    {
+      "stem": "malignant (180)",
+      "cls": "malignant",
+      "dice": 0.9552022315202054,
+      "iou_true": 0.9142460486971055,
+      "iou_pred_head": 0.9843857288360596
+    },
+    {
+      "stem": "malignant (181)",
+      "cls": "malignant",
+      "dice": 0.48911337110091535,
+      "iou_true": 0.32372605710152474,
+      "iou_pred_head": 0.9509774446487427
+    },
+    {
+      "stem": "malignant (183)",
+      "cls": "malignant",
+      "dice": 0.9146733520129684,
+      "iou_true": 0.8427631936518137,
+      "iou_pred_head": 1.0027575492858887
+    },
+    {
+      "stem": "malignant (187)",
+      "cls": "malignant",
+      "dice": 0.3498440764176882,
+      "iou_true": 0.2120066785314531,
+      "iou_pred_head": 0.9260377883911133
+    },
+    {
+      "stem": "malignant (193)",
+      "cls": "malignant",
+      "dice": 0.7187499999999722,
+      "iou_true": 0.5609756097560636,
+      "iou_pred_head": 0.9477254748344421
+    },
+    {
+      "stem": "malignant (194)",
+      "cls": "malignant",
+      "dice": 0.9161743447929034,
+      "iou_true": 0.8453152408703976,
+      "iou_pred_head": 0.9665991067886353
+    },
+    {
+      "stem": "malignant (39)",
+      "cls": "malignant",
+      "dice": 0.8439195011912465,
+      "iou_true": 0.7299833377181231,
+      "iou_pred_head": 0.9738040566444397
+    },
+    {
+      "stem": "malignant (52)",
+      "cls": "malignant",
+      "dice": 0.8081187292805461,
+      "iou_true": 0.6780194882941171,
+      "iou_pred_head": 0.9931302070617676
+    },
+    {
+      "stem": "malignant (63)",
+      "cls": "malignant",
+      "dice": 0.8390221543162655,
+      "iou_true": 0.722685757902762,
+      "iou_pred_head": 0.9724323749542236
+    },
+    {
+      "stem": "malignant (64)",
+      "cls": "malignant",
+      "dice": 0.768965299551761,
+      "iou_true": 0.6246495726495512,
+      "iou_pred_head": 0.9477959275245667
+    },
+    {
+      "stem": "malignant (67)",
+      "cls": "malignant",
+      "dice": 0.7347175557757673,
+      "iou_true": 0.580674741145433,
+      "iou_pred_head": 0.9441273212432861
+    },
+    {
+      "stem": "malignant (71)",
+      "cls": "malignant",
+      "dice": 0.9145547819223943,
+      "iou_true": 0.8425618968980584,
+      "iou_pred_head": 0.9857296943664551
+    },
+    {
+      "stem": "malignant (81)",
+      "cls": "malignant",
+      "dice": 0.39258405781919997,
+      "iou_true": 0.24423302489247217,
+      "iou_pred_head": 0.9128649234771729
+    },
+    {
+      "stem": "malignant (82)",
+      "cls": "malignant",
+      "dice": 0.9154960603236311,
+      "iou_true": 0.8441611199649747,
+      "iou_pred_head": 0.9702712893486023
+    },
+    {
+      "stem": "malignant (86)",
+      "cls": "malignant",
+      "dice": 0.8995386043107109,
+      "iou_true": 0.817419500433518,
+      "iou_pred_head": 0.9855859279632568
+    },
+    {
+      "stem": "malignant (92)",
+      "cls": "malignant",
+      "dice": 0.7841560158659987,
+      "iou_true": 0.6449478930674832,
+      "iou_pred_head": 0.9973081946372986
+    },
+    {
+      "stem": "malignant (93)",
+      "cls": "malignant",
+      "dice": 0.899466557242498,
+      "iou_true": 0.8173005219984869,
+      "iou_pred_head": 1.0032607316970825
+    }
+  ],
+  "summary": {
+    "benign": {
+      "n": 66,
+      "dice_mean": 0.8427222961339026,
+      "dice_std": 0.11303074831821143,
+      "iou_true_mean": 0.7434771964688657,
+      "iou_true_std": 0.1570394825797985,
+      "iou_pred_head_mean": 0.9497408519188563
+    },
+    "malignant": {
+      "n": 31,
+      "dice_mean": 0.8032094169679214,
+      "dice_std": 0.14456307420013179,
+      "iou_true_mean": 0.6915877951780771,
+      "iou_true_std": 0.17101431612243906,
+      "iou_pred_head_mean": 0.9685955355244298
+    },
+    "global": {
+      "dice_mean": 0.8300944687715787,
+      "dice_std": 0.12534476739968534,
+      "iou_true_mean": 0.7268939857470674
+    }
+  },
+  "paper_targets": {
+    "benign": {
+      "dice": "0.9396 +/- 0.0348",
+      "iou": "0.8879 +/- 0.0580"
+    },
+    "malignant": {
+      "dice": "0.9178 +/- 0.0460",
+      "iou": "0.8510 +/- 0.0734"
+    },
+    "global": {
+      "dice": "0.9326 +/- 0.0398",
+      "iou": "~0.876"
+    }
+  }
+}
