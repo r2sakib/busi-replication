@@ -1,0 +1,53 @@
+[yolov10b_B_s7] hp = {"epochs": 200, "patience": 30, "warmup_epochs": 3, "cos_lr": false, "cache": "ram", "workers": 2, "deterministic": true, "fliplr": 0.5, "flipud": 0.5, "mosaic": 1.0, "mixup": 0.1, "hsv_h": 0.015, "hsv_s": 0.7, "hsv_v": 0.4, "degrees": 15.0, "scale": 0.5, "perspective": 0.0005, "lr0": 7.372e-05, "momentum": 0.6657, "weight_decay": 0.000686, "optimizer": "Adam", "imgsz": 640, "batch": 8, "seed": 7}
+  0%|          | 0.00/755k [00:00<?, ?B/s]100%|██████████| 755k/755k [00:00<00:00, 7.81MB/s]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/ultralytics/data/dataset.py", line 138, in get_labels
+    cache, exists = load_dataset_cache_file(cache_path), True  # attempt to load a *.cache file
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/ultralytics/data/utils.py", line 659, in load_dataset_cache_file
+    cache = np.load(str(path), allow_pickle=True).item()  # load dict
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/numpy/lib/_npyio_impl.py", line 455, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/kaggle/working/busi_yolo/train/labels.cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/kaggle/working/train_worker.py", line 34, in <module>
+    model.train(data=data, project=str(a.runs), name=tag, exist_ok=True, plots=False, val=True, verbose=False, **hp)
+  File "/usr/local/lib/python3.12/dist-packages/ultralytics/engine/model.py", line 805, in train
+    self.trainer.train()
+  File "/usr/local/lib/python3.12/dist-packages/ultralytics/engine/trainer.py", line 207, in train
+    self._do_train(world_size)
+  File "/usr/local/lib/python3.12/dist-packages/ultralytics/engine/trainer.py", line 322, in _do_train
+    self._setup_train(world_size)
+  File "/usr/local/lib/python3.12/dist-packages/ultralytics/engine/trainer.py", line 286, in _setup_train
+    self.train_loader = self.get_dataloader(self.trainset, batch_size=batch_size, rank=LOCAL_RANK, mode="train")
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/ultralytics/models/yolo/detect/train.py", line 49, in get_dataloader
+    dataset = self.build_dataset(dataset_path, mode, batch_size)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/ultralytics/models/yolo/detect/train.py", line 43, in build_dataset
+    return build_yolo_dataset(self.args, img_path, batch, self.data, mode=mode, rect=mode == "val", stride=gs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/ultralytics/data/build.py", line 87, in build_yolo_dataset
+    return dataset(
+           ^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/ultralytics/data/dataset.py", line 64, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.12/dist-packages/ultralytics/data/base.py", line 74, in __init__
+    self.labels = self.get_labels()
+                  ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/ultralytics/data/dataset.py", line 142, in get_labels
+    cache, exists = self.cache_labels(cache_path), False  # run cache ops
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/ultralytics/data/dataset.py", line 130, in cache_labels
+    save_dataset_cache_file(self.prefix, path, x, DATASET_CACHE_VERSION)
+  File "/usr/local/lib/python3.12/dist-packages/ultralytics/data/utils.py", line 671, in save_dataset_cache_file
+    path.with_suffix(".cache.npy").rename(path)  # remove .npy suffix
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1363, in rename
+    os.rename(self, target)
+FileNotFoundError: [Errno 2] No such file or directory: '/kaggle/working/busi_yolo/train/labels.cache.npy' -> '/kaggle/working/busi_yolo/train/labels.cache'

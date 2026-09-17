@@ -43,8 +43,17 @@ report/run1/              Kaggle log, notebook with outputs, hparams.json of the
 (CI95 [0.8205, 0.9316] vs paper [0.8156, 0.9348]). MedSAM changes accuracy by exactly 0 for
 all three ablation variants. The other Table 3 variants land 4-15 pts below the paper
 (yolov10n: 0.727 vs 0.880); Config A for yolov10b came out low (0.667 vs 0.846) in this one
-run. Seed runs (yolov10b A/B x seeds 7, 1337) are queued for the next commit. Full numbers in
-`report/report.md`.
+run. Full numbers in `report/report.md`.
+
+## Status (run 2, seeds)
+
+yolov10b Config B over seeds 42/1337: acc 0.880 / 0.846 (mean 0.863 +/- 0.017) - the exact
+103/117 is within-noise, the headline holds. Config A (stock SGD lr 0.01) over seeds 42/7/1337:
+0.667 / 0.427 / 0.821 (mean 0.638 +/- 0.162): the stock baseline does not converge reliably
+under 200 epochs / patience 30, so the paper's "+Optuna" gain is mostly a convergence effect,
+not a better optimum. MedSAM fusion moved accuracy by +/-1 image in every seeded run.
+`yolov10b_B_s7` crashed on a labels.cache race between the two GPU workers (fixed in the
+scheduler); rerun pending.
 
 ## Design decisions
 
